@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+/* text colors: #ff92a9 #303030 white */
+
+html,body{
+	font-family: 'Nunito', sans-serif;
+    color: #303030;
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.bg1{
+	background-color: #303030;
+	color: #fff;
+}
+
+.p-1{
+	padding: 1.5rem;
+}
+.box-shadow {
+  box-shadow: 0 0 2px #252A34;
+}
+
+
+
+/* Section: Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar .logo img{
+    width: 100px;
+    display: block;
+}
+
+#navbar ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+#navbar ul li a{
+	color: #fff;
+	padding: 1rem;
+	border-radius: 15px;
+	font-size: 18px;
+}
+
+#navbar ul li a:hover{
+	background-color: #fff; 
+	color: #ff92a9;
+}
+
+/* home */
+
+.text-center{
+	text-align: center;
+}
+
+
+.btn{
+	background-color: #fff ;
+	color: #ff92a9;
+	padding: 10px 25px; 
+	border-radius: 15px;  
+	justify-content: center; 
+	align-items: center;
+	font-size: 22px;
+	top: 0;
+	z-index: 1;
+}
+
+.btn:hover{
+	background-color: #303030;
+	color: #ff92a9;
+}
+
+
+#home {
+	background: #303030 url(C:\Users\PC2020\Desktop\website yooga\mixkit-yogi-women-meditating-33060-large.mp4) no-repeat center 
+	center/cover;
+	height: 100vh;
+	color: rgba(0,0,0,5);
+
+}
+#home .home-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+#home .home-content h1{
+	line-height:60px;
+	margin-top:60px;
+}
+.home-content video {
+	margin:55px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	opacity: 0.5;
+
+}
+
+.home-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    mix-blend-mode: overlay;
+}
+
+.l-heading{
+	position: relative; ;
+	font-size: 50px;
+	color:#303030;
+
+}
+ 
+
+.lead{
+	font-size: 1rem;
+}
+.py-1{
+	padding: 2rem 0 ;
+}
+
+span{
+	color: #ff92a9;
+}
+
+/* section: About */
+#about{
+	padding: 45px 0 15px 0;
+}
+
+.bg2{
+	background-color: white;
+
+}
+
+#about .about-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#about .about-content div,
+#about .about-content img{
+	flex: 1;
+}
+
+#about .about-content img{
+	width: 50%;
+	margin-left: 0.2rem;
+}
+
+.m-heading{
+	font-size: 35px;
+}
+
+/*section: Programs*/
+
+#programs{
+	padding: 45px 0 15px 0;
+}
+
+#programs .boxes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#programs .boxes .box{
+    margin-bottom:40px;
+	flex:1;
+	padding: 1rem;
+
+}
+#programs .boxes .box .contt p{
+	padding:10px;
+}
+#programs .boxes .box .contt h2{
+	font-size: 25px;
+    padding: 0 6px;
+}
+#programs .boxes .box img{
+	width: 70px;
+	background-color: #ff92a9;
+	padding: 5px;
+	border-radius: 100%;
+}
+  
+
+/* discount section*/
+.red{
+	color: red;
+}
+#discount {
+	position: relative;
+	background: linear-gradient(rgba(255, 132, 130, .7), rgba(255, 132, 130, .7)), url(../discount-bg.png) fixed no-repeat center;
+	height: 60vh;
+	background-attachment: fixed;
+	padding: 60px 0 15px 0;
+	background-size: contain;
+}
+#discount .discount-content {
+	position: absolute;
+	padding: 20px;
+	height: 50%;
+	line-height: 40px;
+}
+
+
+.discount-content{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+}
+
+
+/* section3:Pose */
+
+#pose {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+#pose #pose-filter {
+    padding: 0;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+#pose .pose-item{
+	position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+#pose #pose-filter li{
+    cursor: pointer;
+    display: inline-block;
+    margin: 40px;
+    padding: 12px 12px;
+    color: #303030;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0;
+    background: #ff92a9;
+    border: 1px solid #ff92a9;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+#pose #pose-filter li a{
+	color: #fff;
+	border-radius: 15px;
+	font-size: 18px;
+}
+
+#pose #pose-filter li:hover,
+#pose #pose-filter li.filter-active {
+    background: #303030;
+    border: none;
+    color: #fff;
+}
+
+
+#pose .pose-wrap{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#pose .pose-wrap img{
+	position: relative;
+	margin-top: 60px;
+    width: 35%; 
+    height: 45%; 
+    object-fit: cover;
+    transition: .5s;
+}
+#pose .pose-wrap:hover img {
+    transform: rotate(5deg) scale(1.12);
+}
+
+
+
+/* section4: Trainers */
+
+.bg3{
+	background-color: #fff;
+}
+
+#trainers .trainers-boxes {
+  display: flex;
+}
+
+#trainers .trainers-boxes .trainer-box {
+  flex: 1;
+  background-color: #303030;
+  margin: 1rem;
+  border-radius: 5px;
+  line-height: 25px;
+}
+
+#trainers .trainers-boxes .trainer-box p{
+	color: white;
+	font-size: 15px;
+}
+
+#trainers .trainers-boxes .trainer-box h4{
+	color: white;
+	font-size: 25px;
+}
+
+#trainers .trainers-boxes .trainer-box img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#trainers .trainers-boxes .trainer-box ul{
+  display: flex;
+  list-style: none;
+}
+
+#trainers .trainers-boxes .trainer-box ul li{
+  margin-right: 0.75rem;
+  width: 20px;
+}
+
+#trainers .trainers-boxes .trainer-box ul li a:hover {
+  color: #FF2E63;
+}
+
+/* contact */
+
+#contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bg-4{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#contact .container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+#contact .container .contactInfo .box{
+	position: relative;
+	margin-bottom: 60px;
+	padding: 2px 0 ;
+	display: flex;
+}
+
+#contact .container .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #303030;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+#contact .container .contactInfo .box .text h5{
+	font-weight: 500;
+	font-size: 18px;
+	color: #ff92a9;
+}
+
+.contactForm{
+	width: 40%;
+	padding: 40px;
+	background: white;
+	border-radius: 10px;
+}
+
+.contactForm h6{
+	font-size: 25px;
+	color: #303030;
+
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+    padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #303030;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+	color: #ff92a9;
+	font-size: 15px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+	width: 100px;
+	background: #ff92a9;
+	color: #303030;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+	margin: 10px 80px;
+}
+
+.contactInfo .box .icon{
+	display: flex;
+	width: 30px;
+	height: 30px;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    margin-top: 45px;
+    background: #303030;
+}
+.footer{
+	padding: 90px 0 0 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../hero.png") no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+	height: 600px;
+}
+
+
+.footer .footerInfo{
+    justify-content: center;
+	align-items: center;
+	padding: 70px;
+}
+
+.footer .footerInfo .text{
+	color: white;
+}
+.footer .footerInfo img{
+	width: 250px;
+	height: 150px;
+	margin-right: 30px;
+}
+
