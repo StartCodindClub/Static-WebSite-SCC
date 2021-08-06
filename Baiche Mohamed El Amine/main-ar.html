@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKING CSS FILE -->
+    <link rel="stylesheet" href="stylear.css">
+
+    <!-- LINKING CONSTANTINE 2 LOGO TO DISPLAY IN TAB -->
+    <link rel="icon" type="image/x-icon" href=" scr/25-2.png">
+    <title>NTIC</title>
+
+    <!-- RemixIcon refering -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src=" 404/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <!-- ##########LOADER  ########## -->
+    <div id="preloader">
+        <div class="p">LOADING</div>
+    </div>
+    <div class="page">
+    </div>
+    <script>
+        paceOptions = {
+            ajax: true,
+            document: true,
+            eventLag: false
+        };
+
+        Pace.on('done', function() {
+            $('.p').delay(500).animate({
+                top: '30%',
+                opacity: '0'
+            }, 3000, $.bez([0.19, 1, 0.22, 1]));
+
+            $("body").addClass("done");
+            $('#preloader').delay(1500).animate({
+                top: '-100%'
+            }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+
+        });
+    </script>
+
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+
+    <header class="header" id="header">
+
+        <!-- MENU TOGGELING LEFT SIDE REFERS TO ELEMENTS OUTSIDE LANDING PAGE -->
+        <nav class="nav container">
+            <!-- LOGO // declared as an a in the vi-->
+            <div href="#" class="nav__logo">
+                <img src=" scr/logontic.png" class="logo" alt="NTIC">
+            </div>
+            <!-- navigation menu items -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">الرئيسية</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href=" 404/index.html" class="nav__link">الجامعة</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href=" 404/index.html" class="nav__link">التخرج</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href=" 404/index.html" class="nav__link">البحوث</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href=" 404/index.html" class="nav__link">المكتبة</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href=" 404/index.html" class="nav__link">تواصل معنا</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">EN</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!--THEME CHANGE BUTTON-->
+                    <span class="change-theme-name">Dark/Light mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-5-line"></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <section class="home" id="home">
+            <video src=" scr/NTIC VIDEO_1.mp4" muted loop autoplay class="home__video"></video>
+            <div class="home__container container grid">
+                <div class="home__data reveal">
+                    <span class="home__data-subtitle">كن مستعدا <br> لإستكشاف</span>
+                    <h1 class="home__data-title">جامعة العلوم الحديثة <br> و التكنولوجيا و معلومات الإتصال</h1>
+                    <a href="#faculty" class="button">لنبدأ </a>
+                </div>
+                <div class="home__social">
+                    <a href="https://www.facebook.com/faculteNTICUC2" target="_blank" class="home__social-links">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCia_gXxdxQWyQrqJm4ivS0g" target="_blank" class="home__social-links">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+
+                    <a href="https://twitter.com/fac_ntic_UC2" target="_blank" class="home__social-links">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+
+                    <a href="https://github.com/RomeoDaBlackRose" target="_blank" class="home__social-links">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+
+                <!-- YOU CAN ADD MINI SLIDESHOW HERE !
+                <div class="home__info">
+                    <span class="home__info-title">
+
+                    </span>
+                </div>
+                -->
+
+
+            </div>
+
+        </section>
+
+        <!-- INLINE MENU WITH SVGS HH -->
+
+
+        <div id="Landing-Page-second-menu" class="pagemenu">
+            <div class="introIconsWrap">
+                <div class="introIconsWrap">
+                    <div class="introIcons ">
+                        <div class="introIcon faculty">
+                            <a href="#faculty" class="active-link">
+                                <div class="introIconCircleWrap ">
+                                    <div class="introIconCircle "></div>
+                                    <img src=" scr/icons svgs/menu2/Graduation Cap.svg" alt="FACULTY"> </div>
+                                <p>الجامعة
+                                </p>
+                            </a>
+                        </div>
+                        <div class="introIcon graduation">
+                            <a href="#graduation" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src=" scr/icons svgs/menu2/Certificate.svg" alt="GRADUATION"> </div>
+                                <p>التخرج
+                                </p>
+                            </a>
+                        </div>
+                        <div class="introIcon research">
+                            <a href="#research" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src=" scr/icons svgs/menu2/e-learning.svg" alt="RESEARCH"> </div>
+                                <p>البحوث</p>
+                            </a>
+                        </div>
+                        <div class="introIcon library">
+                            <a href="#library" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src=" scr/icons svgs/menu2/Library.svg" alt="LIBRARY"> </div>
+                                <p>المكتبة
+                                </p>
+                            </a>
+                        </div>
+                        <div class="introIcon contact">
+                            <a href="#contact" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src=" scr/icons svgs/menu2/Notes.svg" alt="visit"> </div>
+                                <p>تواصل معنا
+                                </p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="circuit__svg">
+                        <img src=" scr/icons svgs/menu2/circuit.svg">
+                    </div>
+                </div>
+                <!-- ########## BREAK 1 [CIRCUIT] ##########-->
+                <div class="break1">
+                    <img src=" scr/icons svgs/circuit/Break1.svg" class="break1">
+                </div>
+
+                <!-- ########## FACULTY ##########-->
+                <section class="fac__section reveal" id="faculty">
+                    <div class="fac__container">
+                        <div class="flexing">
+                            <img src=" scr/icons svgs/amico/Webinar-amico.svg" class="fac__svg1 svgs">
+                            <div class="fac__text">
+                                <h2>عن الجامعة</h2>
+                                <p>انشأت كلية التكنولوجيات الحديثة للمعلومات و الإتصال بجامعة عبد الحميد مهري قسنطينة 2 بعد التقسيم الجامعي لسنة 2012، وهي امتداد لمعهد الاعلام الآلي لجامعة قسنطينة الذي أنشأ سنة 1972، مما يعطي للكلية 50 سنة من الخبرة العلمية
+                                    و البيداغوجية</p>
+                                <a href=" 404/index.html" class="cool-link main__buttons">ابدأ الإستكشاف</a>
+                            </div>
+                        </div>
+                        <div class="fac__ach">
+                            <div class="achIcon">
+                                <div class="achIconCircleWrap">
+                                    <div class="achIconCircle"></div>
+                                    <img src=" scr/icons svgs/menu2/Trophy.svg" alt="trophy"> </div>
+                                <p> أفضل <br> <strong class="ach__p_s">المخابر</strong> <br> في المجال </p>
+                            </div>
+
+                            <div class="achIcon">
+                                <div class="achIconCircleWrap">
+                                    <div class="achIconCircle trophy"></div>
+                                    <img src=" scr/icons svgs/menu2/Test.svg" alt="trophy" class="trophy"> </div>
+                                <p> أفضل <br> <strong class="ach__p_s">كلية</strong> <br>في 2020</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+            </div>
+            </section>
+
+            <!-- ########## BREAK 2 [CIRCUIT] ########## -->
+            <div class="break2">
+                <img src=" scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+            <!-- ########## NUMBERS ##########-->
+
+            <div class="text__numbers ">
+                <div class="textn1">
+                    <h2 class="num">60+</h2>
+                    <p>دكتور</p>
+                    <h2 class="num">30+</h2>
+                    <p>منظمات طلابية</p>
+                    <h2 class="num">70%</h2>
+                    <p>نسبة تخرج</p>
+                </div>
+                <div class="textn2">
+                    <h2 class="num">1:18</h2>
+                    <p>أستاذ لكل طالب
+                    </p>
+                    <h2 class="num">2200+</h2>
+                    <p>
+                        طالب
+                    </p>
+                    <h2 class="num">120+</h2>
+                    <p> أستاذ
+                    </p>
+                </div>
+
+
+            </div>
+            <section class="graduation__section reveal" id="graduation">
+                <div class="graduation__container">
+                    <img src=" scr/icons svgs/amico/Certification-amico.svg" class="fac__svg2 svgs">
+
+                    <div class="graduation__text">
+                        <h2>التخرج</h2>
+                        <p>تضم الكلية قسمان، قسم علوم الحاسوب و تطبيقاته و قيم تكنولوجيات البرمجيات و نظم المعلومات. ينبثق ااقسمان عن جذع مشترك رياضيات و أعلام آلي بتسجيل وطني قطب امتياز. مع تخصصات متنوعة لطوري الليسانس و الماستر. تفتح الكلية آفاق مستقبلية
+                            أمام طلبتها المتخرجين و الحاملين لشهادات ليسانس، ماستر و كذا الدكتوراه للإنخراط ضمن الحياة العملية في مناصب مختلفة متعلقة بالرقمنة داخل و خارج الوطن في تخصصات مختلفة</p>
+                        <a href=" 404/index.html" class="cool-link main__buttons">تعرف على المزيد</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ########## BREAK 3 [CIRCUIT] ########## -->
+            <div class="break3">
+                <img src=" scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+
+            <!-- ########## RESEARCH ##########-->
+            <section class="research__section reveal" id="research">
+                <div class="research__container">
+                    <div class="researchmar">
+                        <img src=" scr/icons svgs/amico/Professor-amico.svg" class="fac__svg3 svgs">
+
+                        <div class="research__text">
+                            <h2>البحوث</h2>
+                            <p>تحتوي الكلية على مخابر بحث علمية لها الريادة في التكوين لما بعد التدرج، حيث تتيح للطلبة فرصا للتكوين و التأهيل الجامعي و البحث العلمي، و التي تعد من أولى المخابر في مجال الإعلام الآلي على المستوى الوطني. وهي : مخبر علوم الحاسوب
+                                الموزعة ، مخبر نمذجة و تنفيذ النظم المعقدة و مخبر علوم البيانات و الذكاء الإصطناعي.</p>
+                            <a href=" 404/index.html" class="cool-link main__buttons">مهتم ؟ </a>
+                        </div>
+                    </div>
+
+                    <!-- ########## LIBRARY ##########-->
+                    <div class="library__container reveal" id="library">
+                        <img src=" scr/icons svgs/amico/Library-amico.svg" class="fac__svg4 svgs">
+
+                        <div class="library__text">
+                            <h2>المكتبة</h2>
+                            <p>توفر الكلية امكانيات تبادل الخبرات مع عدة جامعات أجنبية من خلال برامج التبادل الطلابية، كما توفر أيضا مكتبة داخل الجامعة بعدة إمتيازات، حيث تحتوي المكتبة على قاعة قراءة مع قدرة احتواء تصل الى 120 مكان لطالب، غرفة انترنت مع
+                                +40 مكان، متجر، خدمة أنترنت و العديد من الإمتيازات المغرية. الوصول إلى المكتبة يكون محجوز للطلاب و المدرسين و الباحثين فقط</p>
+                            <a href=" 404/index.html" class="cool-link main__buttons">إبدأ بالمطالعة</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ########## BREAK 4 [CIRCUIT] ########## -->
+            <div class="break4">
+                <img src=" scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+
+
+
+            <!-- ########## FAQ ##########-->
+            <section class="faq__section" id="faq">
+                <div class="faq__svg">
+                    <img src=" scr/icons svgs/amico/FAQs-amico.svg" class="fac__svg5 svgs">
+
+                </div>
+                <div class="faq__container reveal">
+                    <h2>أسئلة متكررة</h2>
+                    <div class="faq__text">
+
+                        <details>
+                            <summary>ماهي معدلات القبول للدخول للكلية؟
+                            </summary>
+                            <p class="faq__text">13.31 لتخصص رياضيات <br> و 13.97 لتخصصي تقني رياضي و علوم طبيعية أرقام بكالوريا 2021 </p>
+                        </details>
+                        <details>
+                            <summary>ماهو نظام الدراسة في الكلية؟
+                            </summary>
+                            <p class="faq__text">أول سنتين تكون إعلام آلي بشكل عام, و التخصص يبدأ من السنة الثالثة ثم السنة الأولى من الماستر</p>
+                        </details>
+                        <details>
+                            <summary>ماهي تخصصات الليسانس و الماستر ؟
+                            </summary>
+                            <p class="faq__text">في الليسانس يوجد 4 تخصصات، أنظمة المعلومات، هندسة البرمجيات، تكنولوجيا المعلومات و علوم الإعلام الآلي. كذلك في الماستر يوجد 4 تخصصات : شبكات و نظم موزعة، نظم المعلومات و تكنولوجيا الويب, علوم و تكنولوجيات المعلومات و الاتصال
+                                و هندسة البرمجيات
+                            </p>
+                        </details>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ########## BREAK 5 [CIRCUIT] ########## -->
+            <div class="break5">
+                <img src=" scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+            <!-- ########## CONTACT ##########-->
+            <section class="contact__section reveal" id="contact">
+                <div class="contact__container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12870.920493234396!2d6.5700063!3d36.2460493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa80cc72a9da3c77b!2sConstantine%202%20University!5e0!3m2!1sen!2sdz!4v1627443545228!5m2!1sen!2sdz" width="300"
+                        height="300" style="border:0;" allowfullscreen="" loading="lazy" class="fac__svg6"></iframe>
+                    <div class="contact__text">
+                        <h2>تحتاج المزيد من المعلومات ؟</h2>
+                        <p>
+                            يمكنك التواصل معنا عبر الهاتف أو الإيميل الموجودان في آخر الصفحة، أو يمكنك الإتصال مباشرة بإطارات الكلية<br> للمزيد من المعلومات حول الكلية</p>
+                        <a href=" 404/index.html" class="cool-link main__buttons">إتصل بنا</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ########## BREAK Final [CIRCUIT] ########## -->
+            <div class="break6">
+                <img src=" scr/icons svgs/circuit/Break[Final].svg" class="break2">
+            </div>
+    </main>
+    <h2 class="footer__slogan">إستعد لمستقبل واعد</h2>
+
+    <div class="footer__image-container">
+
+        <img src=" scr/footer.png">
+    </div>
+
+
+    <!-- ########## FOOTER ########## -->
+
+    <footer>
+        <div class="footer__container reveal">
+            <div class="footer__logos">
+                <img src=" scr/25-2.png" alt="CONSTANTINE 2" class="footer__logo1">
+                <img src=" scr/logontic.png" alt="NTIC FACULTY" class="footer__logo2">
+            </div>
+            <div class="footer__text ">
+
+
+
+                <p>كلية تكنولوجيا المعلومات والاتصالات (ICT) <br> جامعة قسنطينة 2 - عبد الحميد مهري علي منجلي - <br> ب: 67 أ ، قسنطينة - الجزائر</p> <br>
+                <a href="tel: +21331783173 ">الهاتف : +213 (0) 31.78.31.73</a><br>
+                <a href="mailto: fac.ntic@univ-constantine2.dz ">fac.ntic@univ-constantine2.dz : الإيميل </a><br>
+                <ul class="footer__options">
+                    <li><a href="https://www.univ-constantine2.dz/navigation/index.html" class="cool-link">جولة ثلاثية الأبعاد</a></li>
+                    <li><a href="https://www.univ-constantine2.dz/" class="cool-link">موقع الجامعة</a></li>
+
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer__social">
+                <a href="https://www.facebook.com/faculteNTICUC2" target="_blank" class="">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCia_gXxdxQWyQrqJm4ivS0g" target="_blank" class="">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+
+                <a href="https://twitter.com/fac_ntic_UC2" target="_blank" class="">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+
+                <a href="https://github.com/RomeoDaBlackRose" target="_blank" class="">
+                    <i class="ri-github-fill"></i>
+                </a>
+
+            </div>
+
+
+        </div>
+        <div class="footer__rights">
+            <p>© 2021 AbdelHamid Mahri College, All Rights Reserved | Made with 💙</p>
+        </div>
+    </footer>
+
+    <!-- ########## SCROLL UP ########## -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+
+    <!-- ########## SCROLL REVEAL ########## -->
+
+
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src=" appar.js "></script>
+
+</body>
+
+</html>

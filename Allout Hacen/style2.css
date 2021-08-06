@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(code.jpeg);
+    background-size: cover;
+}
+
+.wrapper {
+    margin-top: 10%;
+}
+
+.wrapper h1 {
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: aqua;
+}
+
+.team {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team-member {
+    background: #26242e;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #b6aeae;
+    position: relative;
+    transition: 0.8s;
+}
+
+.team .team-member h3 {
+    color: #fff;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.team .team-member p.role {
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+.team-member:hover {
+    color: #3498db;
+}
+
+.team-member::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}

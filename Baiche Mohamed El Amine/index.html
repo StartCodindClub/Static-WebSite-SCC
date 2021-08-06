@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKING CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LINKING CONSTANTINE 2 LOGO TO DISPLAY IN TAB -->
+    <link rel="icon" type="image/x-icon" href=" scr/25-2.png">
+    <title>NTIC</title>
+
+    <!-- RemixIcon refering -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src=" 404/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ##########LOADER  ########## -->
+    <div id="preloader">
+        <div class="p">LOADING</div>
+    </div>
+    <div class="page">
+    </div>
+    <script>
+        paceOptions = {
+            ajax: true,
+            document: true,
+            eventLag: false
+        };
+
+        Pace.on('done', function() {
+            $('.p').delay(500).animate({
+                top: '30%',
+                opacity: '0'
+            }, 3000, $.bez([0.19, 1, 0.22, 1]));
+
+            $("body").addClass("done");
+            $('#preloader').delay(1500).animate({
+                top: '-100%'
+            }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+
+        });
+    </script>
+
+
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+
+    <header class="header" id="header">
+
+        <!-- MENU TOGGELING LEFT SIDE REFERS TO ELEMENTS OUTSIDE LANDING PAGE -->
+        <nav class="nav container">
+            <!-- LOGO // declared as an a in the vi-->
+            <div href="#" class="nav__logo">
+                <img src="scr/logontic.png" class="logo" alt="NTIC">
+            </div>
+            <!-- navigation menu items -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="404/index.html" class="nav__link">Faculty</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="404/index.html" class="nav__link">Graduation</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="404/index.html" class="nav__link">Research</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="404/index.html" class="nav__link">Library</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="404/index.html" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="main-ar.html" class="nav__link">ع</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!--THEME CHANGE BUTTON-->
+                    <span class="change-theme-name">Dark/Light mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-5-line"></i>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <section class="home" id="home">
+            <video src="scr/NTIC VIDEO_1.mp4" muted loop autoplay class="home__video"></video>
+            <div class="home__container container grid">
+                <div class="home__data reveal">
+                    <span class="home__data-subtitle">GET READY <br> TO EXPLORE</span>
+                    <h1 class="home__data-title">The faculty of New Information <br> and Communication Technology</h1>
+                    <a href="#faculty" class="button">Let's Roll !</a>
+                </div>
+                <div class="home__social">
+                    <a href="https://www.facebook.com/faculteNTICUC2" target="_blank" class="home__social-links">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCia_gXxdxQWyQrqJm4ivS0g" target="_blank" class="home__social-links">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+
+                    <a href="https://twitter.com/fac_ntic_UC2" target="_blank" class="home__social-links">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+
+                    <a href="https://github.com/RomeoDaBlackRose" target="_blank" class="home__social-links">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+
+                <!-- YOU CAN ADD MINI SLIDESHOW HERE !
+                <div class="home__info">
+                    <span class="home__info-title">
+
+                    </span>
+                </div>
+                -->
+
+
+            </div>
+        </section>
+
+        <!-- INLINE MENU WITH SVGS HH -->
+
+
+        <div id="Landing-Page-second-menu" class="pagemenu">
+            <div class="introIconsWrap">
+                <div class="introIconsWrap">
+                    <div class="introIcons ">
+                        <div class="introIcon faculty">
+                            <a href="#faculty" class="active-link">
+                                <div class="introIconCircleWrap ">
+                                    <div class="introIconCircle "></div>
+                                    <img src="scr/icons svgs/menu2/Graduation Cap.svg" alt="FACULTY"> </div>
+                                <p class="mini-font"> FACULTY
+                                </p>
+                            </a>
+                        </div>
+                        <div class="introIcon graduation">
+                            <a href="#graduation" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src="scr/icons svgs/menu2/Certificate.svg" alt="GRADUATION"> </div>
+                                <p class="mini-font">GRADUATION
+                                </p>
+                            </a>
+                        </div>
+                        <div class="introIcon research">
+                            <a href="#research" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src="scr/icons svgs/menu2/e-learning.svg" alt="RESEARCH"> </div>
+                                <p class="mini-font">RESEARCH</p>
+                            </a>
+                        </div>
+                        <div class="introIcon library">
+                            <a href="#library" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src="scr/icons svgs/menu2/Library.svg" alt="LIBRARY"> </div>
+                                <p class="mini-font">LIBRARY
+                                </p>
+                            </a>
+                        </div>
+                        <div class="introIcon contact">
+                            <a href="#contact" class="active-link">
+                                <div class="introIconCircleWrap">
+                                    <div class="introIconCircle"></div>
+                                    <img src="scr/icons svgs/menu2/Notes.svg" alt="visit"> </div>
+                                <p class="mini-font">CONTACT
+                                </p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="circuit__svg">
+                        <img src="scr/icons svgs/menu2/circuit.svg">
+                    </div>
+                </div>
+                <!-- ########## BREAK 1 [CIRCUIT] ##########-->
+                <div class="break1">
+                    <img src="scr/icons svgs/circuit/Break1.svg" class="break1">
+                </div>
+
+                <!-- ########## FACULTY ##########-->
+                <section class="fac__section reveal" id="faculty">
+                    <div class="fac__container">
+                        <div class="flexing">
+                            <img src="scr/icons svgs/amico/Webinar-amico.svg" class="fac__svg1 svgs">
+                            <div class="fac__text">
+                                <h2>THE FACULTY OF NTIC</h2>
+                                <p>The Faculty of Modern Information and Communication Technologies at the University of Abdelhamid Mehri Constantine 2 was established after the university division of the year 2012, and it is an extension of the Institute
+                                    of Computer Science of the University of Constantine, which was established in 1972, which gives the college 50 years of scientific and pedagogical experience</p>
+                                <a href="404/index.html" class="cool-link main__buttons">SEE MORE !</a>
+                            </div>
+                        </div>
+                        <div class="fac__ach">
+                            <div class="achIcon">
+                                <div class="achIconCircleWrap">
+                                    <div class="achIconCircle"></div>
+                                    <img src="scr/icons svgs/menu2/Trophy.svg" alt="trophy"> </div>
+                                <p> BEST <br> <strong class="ach__p_s">LABORATORIES</strong> <br> in the field </p>
+                            </div>
+
+                            <div class="achIcon">
+                                <div class="achIconCircleWrap">
+                                    <div class="achIconCircle trophy"></div>
+                                    <img src="scr/icons svgs/menu2/Test.svg" alt="trophy" class="trophy"> </div>
+                                <p> BEST <br> <strong class="ach__p_s">FACULTY</strong> <br> in 2020 </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+            </div>
+            </section>
+
+            <!-- ########## BREAK 2 [CIRCUIT] ########## -->
+            <div class="break2">
+                <img src="scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+            <!-- ########## NUMBERS ##########-->
+
+            <div class="text__numbers ">
+                <div class="textn1">
+                    <h2 class="num">20+</h2>
+                    <p>Doctor</p>
+                    <h2 class="num">30+</h2>
+                    <p>student organizations </p>
+                    <h2 class="num">70%</h2>
+                    <p>Percentage of Graduation</p>
+                </div>
+                <div class="textn2">
+                    <h2 class="num">1:18</h2>
+                    <p>Teacher to Student
+                    </p>
+                    <h2 class="num">2200+</h2>
+                    <p>Student
+                    </p>
+                    <h2 class="num">120+</h2>
+                    <p>Teacher
+                    </p>
+                </div>
+
+
+            </div>
+            <section class="graduation__section reveal" id="graduation">
+                <div class="graduation__container">
+                    <img src="scr/icons svgs/amico/Certification-amico.svg" class="fac__svg2 svgs">
+
+                    <div class="graduation__text">
+                        <h2>GRUADUATION</h2>
+                        <p>The college includes two departments, the Department of Computer Science and its Applications and the Values of Software Technologies and Information Systems. The two divisions emanate from a common branch of mathematics and computer
+                            science, with a national registration, a pole of excellence. With a variety of specializations for the bachelor's and master's levels. The college opens future prospects for its graduate students who hold bachelor’s, master’s
+                            and doctorate degrees to engage in practical life in various positions related to digitization inside and outside the country in different specializations</p>
+                        <a href="404/index.html" class="cool-link main__buttons">LEARN MORE !</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ########## BREAK 3 [CIRCUIT] ########## -->
+            <div class="break3">
+                <img src="scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+
+            <!-- ########## RESEARCH ##########-->
+            <section class="research__section reveal" id="research">
+                <div class="research__container">
+                    <div class="researchmar">
+                        <img src="scr/icons svgs/amico/Professor-amico.svg" class="fac__svg3 svgs">
+
+                        <div class="research__text">
+                            <h2>RESEARCH</h2>
+                            <p>The college contains scientific research laboratories that lead in post-graduation training, as it provides students with opportunities for training, university qualification and scientific research, which is one of the first
+                                laboratories in the field of computer science at the national level. They are: Distributed Computer Science Lab, Complex Systems Modeling and Implementation Lab, Data Science and Artificial Intelligence Lab.</p>
+                            <a href="404/index.html" class="cool-link main__buttons">TAKE A LOOK!</a>
+                        </div>
+                    </div>
+
+                    <!-- ########## LIBRARY ##########-->
+                    <div class="library__container reveal" id="library">
+                        <img src="scr/icons svgs/amico/Library-amico.svg" class="fac__svg4 svgs">
+
+                        <div class="library__text">
+                            <h2>LIBRARY</h2>
+                            <p>The college provides the possibilities of exchanging experiences with several foreign universities through student exchange programs. It also provides a library within the university with several privileges. The library contains
+                                a reading room with a capacity of 120 places for a student, an internet room with +40 places, a store, an internet service. And many tempting perks. Access to the library is reserved for students, teachers and researchers
+                                only
+                            </p>
+                            <a href="404/index.html" class="cool-link main__buttons">START READING!</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ########## BREAK 4 [CIRCUIT] ########## -->
+            <div class="break4">
+                <img src="scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+
+
+
+            <!-- ########## FAQ ##########-->
+            <section class="faq__section" id="faq">
+                <div class="faq__svg">
+                    <img src="scr/icons svgs/amico/FAQs-amico.svg" class="fac__svg5 svgs">
+
+                </div>
+                <div class="faq__container reveal">
+                    <h2>FAQ</h2>
+                    <div class="faq__text">
+
+                        <details>
+                            <summary>What are the acceptance rates for entering the college?</summary>
+                            <p class="faq__text">13.31 Mathematics major <br> And 13.97 for a Technician Math and Sciences major, baccalaureate numbers 2021</p>
+                        </details>
+                        <details>
+                            <summary>What is the system of study in the college?</summary>
+                            <p class="faq__text">The first two years are general computer science, and the specialization starts from the third year and then the first year of the master</p>
+                        </details>
+                        <details>
+                            <summary>What are the majors of Bachelor's and Master's?</summary>
+                            <p class="faq__text">There are 4 majors in the bachelor's degree, information systems, software engineering, information technology and computer science. Also in the master there are 4 specializations: networks and distributed systems, information
+                                systems and web technology, information and communication sciences and technologies, and software engineering.</p>
+                        </details>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ########## BREAK 5 [CIRCUIT] ########## -->
+            <div class="break5">
+                <img src="scr/icons svgs/circuit/Break.svg" class="break2">
+            </div>
+
+            <!-- ########## CONTACT ##########-->
+            <section class="contact__section reveal" id="contact">
+                <div class="contact__container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12870.920493234396!2d6.5700063!3d36.2460493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa80cc72a9da3c77b!2sConstantine%202%20University!5e0!3m2!1sen!2sdz!4v1627443545228!5m2!1sen!2sdz" width="300"
+                        height="300" style="border:0;" allowfullscreen="" loading="lazy" class="fac__svg6"></iframe>
+                    <div class="contact__text">
+                        <h2>NEED MORE INFORMATIONS ?</h2>
+                        <p>You can contact us via the phone or email at the bottom of the page, or you can contact the college directors directly.<br> for more information about the college</p>
+                        <a href="404/index.html" class="cool-link main__buttons">GET IN TOUCH!</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ########## BREAK Final [CIRCUIT] ########## -->
+            <div class="break6">
+                <img src="scr/icons svgs/circuit/Break[Final].svg" class="break2">
+            </div>
+    </main>
+    <h2 class="footer__slogan">GET READY FOR A BRIGHT FUTURE</h2>
+
+    <div class="footer__image-container">
+
+        <img src="scr/footer.png">
+    </div>
+
+
+    <!-- ########## FOOTER ########## -->
+
+    <footer>
+        <div class="footer__container reveal">
+            <div class="footer__logos">
+                <img src="scr/25-2.png" alt="CONSTANTINE 2" class="footer__logo1">
+                <img src="scr/logontic.png" alt="NTIC FACULTY" class="footer__logo2">
+            </div>
+            <div class="footer__text ">
+                <p>Faculty of Information and Communication Technology (ICT) <br> Université Constantine 2 - Abdelhamid Mehri Ali Mendjeli - <br> BP : 67A, Constantine - Algeria</p> <br>
+                <a href="tel: +21331783173 ">Tel : +213 (0) 31.78.31.73</a><br>
+                <a href="mailto: fac.ntic@univ-constantine2.dz ">E-mail : fac.ntic@univ-constantine2.dz</a><br>
+                <ul class="footer__options">
+                    <li><a href="https://www.univ-constantine2.dz/navigation/index.html" class="cool-link">3D TOUR</a></li>
+                    <li><a href="https://www.univ-constantine2.dz/" class="cool-link">UNIVERSITY WEBSITE</a></li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="footer__social">
+                <a href="https://www.facebook.com/faculteNTICUC2" target="_blank" class="">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCia_gXxdxQWyQrqJm4ivS0g" target="_blank" class="">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+
+                <a href="https://twitter.com/fac_ntic_UC2" target="_blank" class="">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+
+                <a href="https://github.com/RomeoDaBlackRose" target="_blank" class="">
+                    <i class="ri-github-fill"></i>
+                </a>
+
+            </div>
+
+
+        </div>
+        <div class="footer__rights">
+            <p>© 2021 AbdelHamid Mahri College, All Rights Reserved | Made with 💙</p>
+        </div>
+    </footer>
+
+    <!-- ########## SCROLL UP ########## -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+
+
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="app.js "></script>
+
+
+</body>
+
+</html>

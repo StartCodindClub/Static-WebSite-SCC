@@ -1,0 +1,88 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Prompt", sans-serif;
+    background: #292929;
+}
+
+.title {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    color: #D2D6DC;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        color: #666DF7;
+    }
+}
+
+.not-found {
+    background-color: #ABB0FF;
+    color: #292929;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-direction: column;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pace.pace-inactive {
+    display: none;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+    overflow: hidden;
+    position: fixed;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p {
+    position: absolute;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ABB0FF;
+    animation: signal 2s infinite;
+}
+
+@keyframes signal {
+    50% {
+        color: #101010;
+    }
+}
