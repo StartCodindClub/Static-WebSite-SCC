@@ -1,0 +1,766 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)),url(images/back-.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+
+.nav-bar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+   
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    
+}
+.menu{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 15px;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+    text-transform: uppercase;
+    
+}
+nav ul li a::before{
+content: '';
+width: 60px;
+position: absolute;
+border-bottom: 8px solid white;
+bottom: 0;
+right: 350px;
+transition: 0.7s all;
+
+}
+nav ul li a :hover:before{
+    right: 0;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: transparent;
+    position: relative;
+    font-size: 100px;
+    font-family: "Bebas Neue";
+    -webkit-text-stroke: 0.3vw , white;
+    text-transform: uppercase;
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+p{
+    color: white;
+    font-size: 13px;
+    line-height: 15px;
+    font-family: 'Exo 2', sans-serif;
+    
+
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding-right: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin :10px 20px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    
+    
+}
+.card1{
+    background-image: url(images/w.PNG);
+    background-image: center;
+}
+
+
+.card2{
+    background-image: url(images/9snt.PNG);
+}
+
+.card3{
+    background-image: url(images/alg.PNG);
+}
+
+.card4{
+    background-image: url(images/Capture.PNG);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: white;
+    text-shadow: 0 0 5px #999;
+    padding-left :5%;
+}
+.card p {
+    font-size: 10px;
+    text-shadow: 0 0 15px #000;
+    padding-left: 10%;
+    font-family: "PT Serif";
+}
+#about{
+    width: 100%;
+    height: 130vh;
+  /*background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(images/f9606fd3-7b25-4baf-a074-09b85620e2a3.jpg) ;*/
+  background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)),url(images/700.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+#about-algeria{
+    align-items: center;
+    align-content: center;
+    text-align:justify;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 9%;
+    
+}
+#aboutalg{
+    color: transparent;
+    position: relative;
+    font-size: 100px;
+    font-family: "Bebas Neue";
+    -webkit-text-stroke: 0.1vw , white;
+    text-transform: uppercase;
+    
+    
+}
+#aboutalg::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+#pic{
+    margin-top: 50px;
+}
+.wrapper{
+    margin: 100px auto;
+    max-width: 1100px;
+}
+.wrapper nav {
+    display: flex;
+    justify-content: center;
+}
+nav .items {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+}
+nav .items .item {
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: MediumAquaMarine;
+ border: 2px solid MediumAquaMarine; 
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+nav .items .active ,
+nav .items .item:hover {
+    color: white;
+    background: MediumAquaMarine ; }
+
+    
+    #pic{
+        width: 100%;
+        height: 735vh;
+        background-color:beige ;
+        background-position: center;
+        background-size: cover;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        margin-top: 50px;
+
+    }
+    .cont {
+        padding-top: 10%;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       max-width: 1100px;
+    }
+    .cont .cardx{
+        position: relative;
+        width: 320px;
+        height: 320px;
+        margin: 15px;
+        overflow: hidden;
+    }
+    .cont .cardx .imgbox,
+  
+    .cont .cardx .contentbox{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .cont .cardx .imgbox img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cont .cardx .contentbox::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in-out;
+        transform-origin: right;
+    }
+
+    .cont .cardx:hover .contentbox::before{
+        transform: scaleX(1);
+        transition: transform 0.5s ease-in-out;
+        transform-origin: left;
+    }
+    .cardx p{
+        color: black;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-weight: 300;
+
+    }
+    .cont .cardx .contentbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont .cardx .contentbox .content {
+        position: relative;
+        padding: 30px;
+        z-index: 1;
+        transition: 0.5s;
+        transform: translate(-300px);
+        transition-delay: 0s;
+    }
+
+    .cont .cardx:hover .contentbox .content{
+        transform: translateX(0px);
+        transition-delay: 0.5s;
+    }
+    .cont .cardx .contentbox .content h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #hola{
+        color: transparent;
+        position: relative;
+        font-size: 100px;
+        font-family: "Bebas Neue";
+        -webkit-text-stroke: 0.1vw , black;
+        text-transform: uppercase;
+        padding-top: 1%;  
+    }
+    #hola::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: black;
+        -webkit-text-stroke: 0vw black;
+        border-right: 2px solid black;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+    }  
+
+    .cont .cardx .imgbox video {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #contact{
+        position: relative;
+        min-height: 100vh;
+        padding:50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url(images/12.PNG);
+        background-size: cover;
+        margin-top: 60px;
+        
+
+    }
+    #contact .content {
+        max-width: 800px;
+    }
+    #contact .content h2{
+        color: white;
+    position: relative;
+    font-size: 80px;
+    font-family: "Bebas Neue";
+    text-transform: uppercase;
+    display: flex;
+     flex-direction: column;
+      justify-content: center;
+      text-align: center;
+     
+      
+
+    }
+    #contact .content p{
+        text-align: center;
+        color: white;
+        display: flex; flex-direction: column; justify-content: center
+        
+    }
+    h4{
+        color: AliceBlue;
+    }
+    .full-page {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .full-page .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full-page .info .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+    .full-page .info .box .icon {
+        min-width: 60px;
+        height: 60px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+    }
+    .full-page .info .box .text {
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        flex-direction: column;
+        font-weight: 300;
+    }
+
+    .Box {
+        width: 40%;
+        padding: 40px;
+        background: white;
+        opacity: 0.8;
+
+    }
+    .Box h2 {
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .Box .input-box {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+
+    }
+    .Box .input-box input , 
+    .Box .input-box textarea {
+ width: 100%;
+ padding: 5px 0;
+ font-size: 16px;
+ margin: 10px 0;
+ border: none;
+ border-bottom: 2px solid #333;
+ outline: none;
+ resize: none;
+
+
+    }
+    .Box .input-box span {
+        position: absolute ;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition:0.5s;
+        color: #666;
+    }
+
+
+    .Box .input-box input:focus ~ span , 
+    .Box .input-box input:valid ~ span ,
+    .Box .input-box textarea:focus ~ span , 
+    .Box .input-box textarea:valid ~ span {
+        color: brown;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }  
+
+    .Box .input-box input [type="submit"]
+    {
+        width: 100px;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+
+
+
+    
+    
+
+    #blog{
+        position: relative;
+        min-height: 100vh;
+        padding:50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url(images/hayek.PNG);
+        opacity: 0.9;
+        background-size: cover;
+        margin-top: 60px;
+        
+
+    }
+
+
+
+    .container2 {
+
+position: relative;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 40px 0;
+    }
+
+  .container2  .cardB{
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      margin: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(10px);
+
+    }
+   .container2 .cardB .contentB{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+  .container2 .cardB:hover .contentB{
+      opacity: 1;
+      transform: translateY(-20px);
+
+
+    }
+    .container2 .cardB .contentB  .imgB{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 10px solid rgba(0, 0, 0, 0.25);
+    }
+    .container2 .cardB .contentB  .imgB img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+    .container2 .cardB .contentBL h3 {
+color: white;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 500;
+font-size: 18px;
+text-align: center;
+margin: 20px 0 10px;
+line-height: 1.1em;
+
+    }
+    .container2 .cardB .contentBL h3 span {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: initial;
+    }
+
+
+    
+    .sci{
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+
+    }
+    
+    .container2 .cardB .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.container2 .cardB:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container2 .cardB .sci li a {
+    color: white;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:991px)
+{
+    .content 
+    {
+        padding: 50px;
+    }
+    .full-page 
+    {
+        flex-direction: column;
+    }
+    .full-page .info 
+    {
+        margin-bottom: 40px;
+    }
+    .full-page .info ,
+     .box
+    {
+        width: 100%;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#blog .content p{
+    text-align: center;
+    color: white;
+    display: flex; 
+    flex-direction: column;
+     justify-content: center;
+     font-size: 15px;
+     line-height: 30px;
+
+    
+}
+
+
+
+
+#hey{
+    color: transparent;
+    position: relative;
+    font-size: 100px;
+    font-family: "Bebas Neue";
+    -webkit-text-stroke: 0.1vw , white;
+    text-transform: uppercase;
+    padding-top: 1%;  
+}
+#hey::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid white;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
