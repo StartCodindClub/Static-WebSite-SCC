@@ -1,0 +1,652 @@
+
+
+/*General*/
+
+*{
+
+margin:0;
+padding: 0; 
+
+}
+
+
+p{
+	line-height: 20px;
+	color:#777;
+
+}
+
+
+/*Header*/
+.blue {
+
+	color:#26C4EC;
+}
+
+
+h1{
+
+ font-family: fantasy;
+ font-size: 60px;
+color: #26C4EC;
+
+
+}
+
+
+
+header h1 {
+
+float:left;
+margin-top: 32px;
+
+
+
+}
+
+
+header nav {
+float: right;
+margin-top: 50px
+
+}
+
+
+.wrapper{
+
+	width:940px; 
+	margin:0 auto;
+	padding: 0 10px;
+
+
+}
+
+ul{
+
+list-style: none;
+
+}	
+
+header nav ul li a{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 20px;
+
+}
+
+header nav ul li {
+
+	float:left;
+	display: inline-block;
+    
+}
+
+
+
+a {
+
+	text-decoration: none;
+	color:#444;
+}
+
+header nav ul li  :hover{
+	color: #26C4EC;
+}
+
+
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 95%;
+  margin-left: 12PX;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: all;
+  width: 15%;
+  padding: 10px;
+  background: #26C4EC;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+  margin-left:10PX;
+
+}
+
+form.example button:hover {
+  background: #00FF00;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* welcome*/
+ #welcome h6{
+	position: relative;
+	font-size: 40PX;
+	color: #26C4EC;
+	text-transform: uppercase;
+    margin-left: 60PX;
+
+}
+ #welcome h6::before
+{
+	content: attr(data-text);
+	position: absolute;
+	width: 0;
+	height: 100%;
+	color:white;
+	border-right: 2PX solid #26C4EC;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate 
+{
+	0%,10%,100%
+	{width: 0 ;}
+	70%,90%
+	{width:100%; }
+}
+
+/* main image*/
+
+#main-image{
+	height: 610px;
+	background: url('images/travel.jpg') no-repeat top center;; 
+	position: center; 
+	margin-left: 0PX;
+}
+
+h2{
+
+	font-size: 55px;
+	color:#FFFFFF;
+	
+}
+
+#main-image h2{
+
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 100px 0 40px 0;
+	margin-bottom: 20px;border-image: 
+
+}
+
+
+.button-1{
+	width: 180px;
+	height: 50px;
+	background-color:#26C4EC;
+	color: #FFFFFF;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height:50px;
+	text-align: center;
+	border-radius: 3px;
+	display: block;
+    transition:all; 
+}
+
+
+
+.button-1:hover{
+
+
+	background:#00FF00;
+
+    transform: scale(2);
+
+}
+/*video*/
+h3 video{
+	position: absolute;
+	left: 5PX;
+	height: 595PX;
+	weight: 495PX;
+	
+}
+
+
+/*inscription*/
+.inscription{
+	position: relative;
+
+}
+
+ .iscription .content{
+   
+   width: 10PX;
+   text-align: center;
+   padding: 2PX 8PX;
+
+
+ }
+ .inscription .content h1{
+font-size: 18PX;
+padding-top: 1PX;
+color: #fff;
+text-transform: uppercase;
+
+ }
+
+.inscription .content h3{
+font-size: 18PX;
+color: #EEE;
+font-weight: lighter;
+
+ }
+ .inscription .content .form-container form{
+ 	width: 28%;
+ 	height: 500PX;
+ 	background:#fff;
+ 	padding: 2PX 28PX;
+ 	margin-top: 1PX;
+ 	border-radius: 1PX;
+
+ }
+ .inscription .content .form-container form h3{
+ 	font-size: 18PX;
+ 	padding: 8PX 8PX;
+ 	color: blue;
+ 	font-weight: 20PX;
+ 	text-transform: uppercase;
+ }
+ .inscription .content .form-container form span{
+ 	font-size: 20PX;
+ 	display: block;
+ 	padding: 14PX 0;
+ 	color: #26C4EC;
+ 	text-align: left;
+ }
+ .inscription .content .form-container form input{
+ 	height: 15PX;
+ 	width: 100%;
+ 	padding: 8PX;
+ 	font-size: 15PX;
+ 	background: #EEE;
+
+ }
+ .button-4 {
+
+	color: #FFFFFF;
+	background-color:#26C4EC; 
+	padding: 6px 16px;
+	border-radius: 3px;
+	
+
+}
+
+.button-4:hover {
+color:#FFFFFF ;
+background-color:#00FF00;
+ 
+
+}
+ 
+/*audio*/
+ audio{
+	position: absolute;
+	margin-left: 650PX;
+	margin-bottom: 50PX;
+	margin-top: 0PX;
+
+}
+
+
+
+
+/*tours*/
+#tours article {
+
+	width: 820px;
+	height: 420px;
+	border-radius: 18px;
+	float: left;
+	margin-left: 30PX;
+	margin-bottom: 20PX;
+
+    
+
+}
+
+.overlay {
+
+	height: 70%;
+	width: 200px;
+	padding: 18px;
+	border-radius: 5px 2PX 2PX 5px;
+	text-align:center;
+	box-sizing:border-box;
+    padding-left: 20PX;
+    background-color:#ECF0F1;
+}
+
+
+article h4 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+	text-align: center;
+	color: #777;
+	font-size: 20PX;
+
+
+}
+
+#tours p{
+
+	text-align: center;
+	margin-bottom: 20px;
+	color: #777;
+
+}
+
+
+.button-2 {
+
+	color: #FFFFFF;
+	background-color:#26C4EC; 
+	padding: 6px 20px;
+	border-radius: 3px;
+	
+
+}
+
+.button-2:hover {
+color:#FFFFFF ;
+background-color:#00FF00;
+ 
+
+}
+
+/* adventure*/
+ #adventure h6{
+	position: relative;
+	font-size: 40PX;
+	color: #26C4EC;
+	text-transform: uppercase;
+    margin-left: 80PX;
+
+}
+ #adventure h6::before
+{
+	content: attr(data-text);
+	position: absolute;
+	width: 0;
+	height: 80%;
+	color:white;
+	border-right: 2PX solid #26C4EC;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate 
+{
+	0%,10%,100%
+	{width: 0 ;}
+	70%,90%
+	{width:100%; }
+}
+
+
+/*gallery*/
+.gallery{
+	background: #26C4EC; 
+}
+.gallery .title{
+	color: #444;
+}
+.gallery .heading{
+	color: #fff;
+}
+
+.gallery .card-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 32PX 0;
+}
+.gallery .card-container .card{
+	height: 300PX;
+	width: 200PX;
+	margin: 32PX 16PX;
+	position: relative;
+	overflow: hidden;
+}
+.gallery .card-container .card img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.card{
+	transition: all;
+
+}
+
+.card:hover{
+ transform: scale(1.2);
+
+}
+
+
+/*flexbox*/
+.container{
+	display: flex;
+	flex-direction: row;
+
+	justify-content: space-around;
+	background: #f1f1f1;
+}
+.box{
+	border: 1PX solid #212121;
+	font-size: 32PX;
+	font-family:Helvetica,sans-serif;
+}
+
+.brown{
+	background: #873600;
+}
+.bleu{
+	background: #3498DB;
+}
+.green{
+	background:#28B463;
+}
+.yellow{
+	background: #F1C40F;
+}
+.orange{
+	background: #F86E1B;
+}
+
+
+
+/*services*/
+
+#services ul{
+
+margin: 50px 0;
+background: #EBF5FB;
+}
+
+#services ul li {
+
+	width: 280px;
+	float: left;
+	padding-top: 40px;
+	text-align: center;
+	margin-right: 10px;
+
+}
+
+h4 {
+	font-size:24px;
+	color:#26C4EC;
+
+}
+
+#services h4 {
+
+text-transform: uppercase;
+margin-bottom: 50px;
+
+
+}
+
+#services p{
+	margin-bottom: 50px;
+
+}
+#service-1 {
+	background: url('images/steps-icon-1.png') no-repeat top center;
+
+
+}
+#service-2 {
+	background: url('images/steps-icon-2.png') no-repeat top center;
+
+
+}
+#service-3 {
+	background: url('images/steps-icon-3.png') no-repeat top center;
+
+
+}
+
+
+.clear {
+
+	clear:both;
+}
+
+
+
+
+/*Contact*/
+
+
+h3{
+	font-size: 30px;
+	color:#26C4EC;
+
+}
+
+
+#contact {
+    background-color: #f1f1f1;
+	padding: 60px 0;
+	text-align: center;
+	margin-top: 20PX;
+}	
+
+#contact h3{
+	width: 400px;
+	text-transform: uppercase;
+	margin: 0 auto 20px auto;
+	border-bottom: 1px solid #02b8dd;
+	padding-bottom: 20px; 
+
+}
+
+
+
+
+form{
+
+margin: 60px 0 20px 0; 
+
+}
+
+label{
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 10px;
+	color: #444;
+
+}
+
+input[type="text"] {
+padding: 10px;
+font-size: 20px;
+margin-right: 20px;
+border: 2px solid #ddd;
+border-radius: 3px;
+
+
+
+}
+
+.button-3{
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px;
+	background-color:#26C4EC ;
+	border-style: none;
+	border-radius:3px;
+	transition: all;
+
+}
+
+.button-3:hover{
+
+color: #FFFFFF;
+background-color:#00FF00;
+ transform: scale(1.5);
+
+}
+input[type="checkbox"] {
+padding: 10px;
+font-size: 20px;
+margin-right: 20px;
+border: 2px solid #ddd;
+border-radius: 3px;
+margin-top: 20PX;
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+
+height: 260px;
+background-color: #26C4EC;
+
+
+}
+
+footer h1{
+
+	color:#FFFFFF;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.copyright{
+
+	text-align: center;
+	font-weight: bold;
+	padding-top:30px;
+	color:#FFFFFF;
+}
+.white{
+	color: #FFFFFF;
+}

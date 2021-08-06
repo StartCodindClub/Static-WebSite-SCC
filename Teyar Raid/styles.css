@@ -1,0 +1,370 @@
+
+*{
+    font-family: alagard;
+    padding: 0;
+    margin: 0;
+}
+
+/* Resourses */
+
+
+:root{
+    --Darkest: #0c0d14;
+    --Dark: #181c28;
+    --LessDark: #23313d;
+    --MeduimA: #33505d;
+    --MeduimB: #4e7f7d;
+    --LessLight: #53a788;
+    --Light: #70d38b;
+    --Lightest: #cbffd8;
+}
+
+@font-face {
+    font-family: alagard;
+    src: url(Fonts/alagard.ttf);
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(Fonts/Pixel.otf);
+}
+
+body{
+    background: var(--Dark);
+    
+}
+
+/* Navigation Menu */
+
+.navbar{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    min-height: 4rem;
+    background: var(--LessDark);
+    display: flex;
+    box-shadow: 0px 5px 15px;
+    
+    
+}
+
+.headertext{
+    display: flex;
+    align-items: center;
+    margin-left:4%;
+    color: var(--Lightest);
+    text-shadow: 3px 3px var(--Darkest);
+}
+
+.list{
+    display: flex;
+    margin-left: auto;
+    margin-right: 1%;
+    align-items: center;
+}
+
+.ListItem{
+    
+    color: var(--LessLight);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.ListItem:hover{
+    position: relative;
+    bottom: 2%;
+    left: 1%;
+    color: var(--Lightest);
+}
+
+/* Home Section */
+
+.center{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Home{
+    object-fit: cover;
+    vertical-align: middle;
+    background-size: cover;
+    height: 48rem;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 5px;
+}
+
+.background{
+    position: absolute;
+    margin-top: -3.5%;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url(Images/forestBackground.png);
+    background-repeat: no-repeat;
+}
+
+.HomeVid{
+    width: 100%;
+}
+
+.HomeA{
+    margin-top: 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    object-fit: cover;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+
+
+.title{
+    z-index: 5;
+    position: absolute;
+    text-shadow: 5px 5px 1px var(--Lightest);
+    font-size: 4rem;
+    text-align: center;
+    color: var(--MeduimA);
+    margin-top: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+
+}
+.title2{
+    z-index: 5;
+    text-shadow: 5px 5px 1px var(--Dark);
+    font-size: 4rem;
+    text-align: center;
+    color: var(--Light);
+}
+
+
+
+.title3{
+    text-shadow: 10px 10px var(--Darkest);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--Light);
+    padding-top: 4%;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 5px;
+    flex-wrap: wrap;
+
+}
+
+.Skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top	: 3%;
+}
+
+
+.img{
+    margin: 5%;
+    width: 40%;
+    box-shadow: 0px 5px 5px;
+}
+
+.txt{
+    font-family: pixel;
+    padding: 3%;
+}
+
+.txt2{
+    z-index: 5;
+    font-family: pixel;
+    font-size: 1.4rem;
+    padding: 3%;
+    text-shadow: 2px 2px var(--Darkest);
+    color: var(--Light);
+    text-align: center;
+    width: 60%;
+    margin-left: 18%;
+    
+    
+}
+
+.infoText{
+    width: 50%;
+    text-shadow: 3px 3px var(--Darkest);
+    text-align: center;
+    margin: 3%;
+    font-size: 1.3rem;
+    color: var(--Light);
+}
+
+.Button{
+    background-color:var(--LessLight);
+    color: var(--Dark);
+    padding: 1% 4%;
+    font-size: 1.5rem;
+    margin: 4%;
+    box-shadow: 0px 5px 5px;
+    border-color: var(--Lightest);
+}
+
+.Button:hover{
+    position: relative;
+    background-color:var(--Lightest);
+    color: var(--MeduimA);
+    transform: translateX(5px) translateY(-5px) ;
+}
+
+
+
+
+.skill{
+    background: var(--MeduimB);
+    margin-top	: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    width: 20rem;
+    transform: translateY(4em);
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),opacity .3s .25s ease-out;
+}
+
+.skill:hover{
+    background: var(--MeduimA);
+    box-shadow: 10px 10px 10px var(--Lightest);
+    transform: translateX(5px) translateY(-5px) ;
+    
+}
+
+.skill2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: var(--MeduimB);
+    margin-top	: 2%;
+    margin-bottom: 2%;
+    height: 40rem;
+    width: 20rem;
+}
+.skill2:hover{
+    background:var(--Light);
+    box-shadow: 10px 10px 10px var(--MeduimB);
+    transform: translateX(5px) translateY(-5px) ;
+    
+}
+
+.About{
+    margin: 4%;
+    background: var(--LessDark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px  5px;
+}
+
+.footer{
+    height:5rem;
+    display: flex;
+    background: var(--Darkest);
+    align-items: center;
+    justify-content: center;
+}
+.footerText{
+    text-align: center;
+    color: var(--LessLight);
+}
+
+.text{
+    font-size: 30px;
+    color: var(--LessLight);
+    font-family: pixel;
+}
+
+.skillImg{
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: -1.3%;
+   
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .container {
+    text-align: center;
+    margin-left: 24%;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    align-items: center;
+  }
+
+  .background2{
+    padding-top: 2%;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url(Images/forestBackground.png);
+    background-repeat: no-repeat;
+}
+
+.skill.is-visible {
+    opacity: 1;
+    transform: rotateZ(-0.2deg);
+  }
+
+
+@media only screen and (max-width: 1000px){
+    .background2{
+        padding-top: 10%;
+    }
+    .background{
+        padding-top: 10%;
+    }
+    .ListItem{
+        font-size: 0.8rem;
+    }
+    .navbar{
+        font-size: 0.7rem;
+    }
+    .HomeVid{
+        width: auto;
+    }
+}

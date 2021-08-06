@@ -1,0 +1,18 @@
+1. for HTML :
+-Build structure of website
+-Name of the site
+-A nav bar with at least 5 elements 
+-Link every element with a page or a section 
+-Every page should contain at least 3 section (including footer and header)
+-Build a contact page 
+-Add videos or audio
+
+2. CSS :
+-Use flex box or grid 
+-Use animation and transition 
+-Use media queries 
+
+Notes:
+
+-U can use js for animation 
+-The web site should be responsive
