@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Project1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<header id="top">
+      <a href="#" class="brand">Astronomy<span>.</span></a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#event">Events</a>
+          <a href="#gallery">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <video class="video-slide active" src="1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Universe<br><span>Classroom</span></h1>
+        <p>UNIVERSE IN THE CLASSROOM NEWSLETTER ARCHIVE
+This electronic educational newsletter, started in 1984, continues to be used by teachers and other educators around the world who want to help students of all ages learn more about the wonders of the universe through astronomy. All of our past issues are listed below in downloadable format.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>ASPCS<br><span>Monographs</span></h1>
+        <p>Alongside the ASTRONOMY Conference Series, Publications of the ASP, and Mercury magazine, the ASTRONOMY occasionally publishes select stand-alone titles as Monograph Publications. These publications help to increase awareness in astronomy, whether for researchers and scientists, educators, or enthusiasts.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Mercury <br><span>Online</span></h1>
+        <p>Mercury Online is the companion blog for Mercury, a quarterly magazine that's been bringing space and astronomy news to ASTRONOMY members since 1972. Mercury Online serves two purposes: to bring you space news and to showcase some of the great content in Mercury.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>ASTROBEAT<br><span>News</span></h1>
+        <p>Access over 170 feature articles when you join the ASP! Our bi-monthly, Members-only AstroBeat articles feature first-hand perspectives from leaders in astronomy or astronomy outreach about their work and passions.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>CONFERENCE <br><span>Series</span></h1>
+        <p>The ASTRONOMY Conference Series publishes timely accounts of the important meetings in astronomy & astrophysics. Since 1988, the ASP has published eight monographs and over 500 conference proceedings volumes, preserving for posterity the latest results in astronomy, astrophysics, space science, and astronomy education from conferences and workshops held around the world.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+    <section >
+        <div class="container-gal" data-aos="fade-down" >
+            <h1 id="gallery">Gallery</h1>
+            <div class="grid">
+                <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-duration="1200">
+                    <img src="2.jpg" alt="">
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-duration="1400">
+                    <img src="3.jpg" alt="">
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="4.jpg" alt="">
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-duration="1200">
+                    <img src="5.jpg" alt="">
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-duration="1400">
+                    <img src="6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-section" id="about" data-aos="fade-left" data-aos-duration="1000">
+        <div class="inner-container">
+            <h1>About Us</h1>
+            <p class="text">
+                We believe astronomy is a fundamentally democratic science, with the cosmos equally accessible to all people regardless of age, gender, background, ethnicity, economic status, or abilities.
+
+                We envision a world where people of all ages and backgrounds engage in astronomy and share their passion for astronomy with others.
+
+
+            </p>
+        </div>
+    </div>
+
+      <section >
+      <h1 id="event">Upcoming events:</h1>
+    </section>
+
+    <section>
+      <div class="container-reveal">
+        
+        <div class="cards">
+          <div class="text-card" >
+            <h3>Winter 2022 Virtual Astronomy</h3>
+            <p>In this Virtual Astronomy Institute we will explore our perceptions of the universe, and ways we can engage those we work with in the current understanding of what is taking place. From present day Earth to the ancient glow of the Big Bang.</p>
+          </div>
+          <div class="text-card">
+            <h3>"Girls at the Telescope" workshop</h3>
+            <p>Explore some Girl Scout-tested, effective ways to interact with girls in informal learning environments. Use techniques to help create an inviting environment where everyone has the opportunity to learn more about space science..</p>
+          </div>
+          <div class="text-card">
+            <h3> Astronomers for Planet Earth</h3>
+            <p>Join us for a day-long interactive symposium exploring how to harness the astronomical perspective to inspire change on an individual, institutional, and societal level — as we fight to protect our planet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+
+
+    <script>
+  AOS.init();
+</script>
+
+
+
+ <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="items">
+                    <a href="#" class="logo">Astronomy<span>.</span></a>  
+                    <p> ASTRONOMY. is an association for astronomy enthusiasts, through its materials, resources, and programs, ASTRONOMY. promotes public science interest, engagement, and literacy through the awe and wonder of astronomy and related fields. </p>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="items">
+                    <h3>Honors</h3>
+                    <ul>
+                        <li><a href="#">HONORS, GRANTS & PRIZES</a></li>
+                        <li><a href="#">PHOTO GALLERY</a></li>
+                        <li><a href="#">PRESS OFFICE</a></li>
+                        
+                    </ul>                          
+                </div>
+
+                <div class="items">
+                    <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                   
+                </ul>
+                </div>
+                <div class="items">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Knowledge Base</a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="end">Copyright © 2021 by ASTRONOMY. All rights reserved.</p>
+        </div>
+        <a id="top"></a>
+<!--content here-->
+<a href="#top" class="back-to-top-link" aria-label="Scroll to Top">Scroll back to top</a>
+    </footer>
+</body>
+</html>

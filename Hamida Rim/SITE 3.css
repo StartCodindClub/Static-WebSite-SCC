@@ -1,0 +1,787 @@
+@import"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=pacifico')
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: montserrat;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background-color: #F0F8FF;
+    margin-right: 10px;
+}  
+body{
+    padding: 1px 1px 1px 1px;
+}
+ .logo{
+    font-family: 'Knewave', cursive;
+    color: #1a1a1a;
+    font-size: 40px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    text-decoration: none;
+}
+header {
+    position: absolute;
+    top: 0%;
+    left:0%;
+    padding: 20px;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header nav{
+    float: right;
+   
+}
+
+nav ul {
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    font-size: 18px;
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+nav ul li a.active
+,nav ul li a:hover{
+    background: #069370;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header nav ul li a{
+    text-transform: uppercase;/*majuscule*/
+    font-weight: bold;
+    margin-right: 20px;
+    display: block;
+    text-decoration: none;
+    color: #262626;
+}
+
+header nav ul li {
+    float: left;
+    list-style: none;
+    display: inline-block;
+}
+
+@media (max-width: 1200px){
+    header{
+        margin: 20px;
+    }
+}
+
+h3{
+    font-size: 30px;
+}
+ section #hover{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+ } 
+h2{
+    font-size: 5em;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    font-family: 'Norican', cursive;
+}
+h2 span{
+    transition: 1.5s;
+}
+h2 :hover span {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2);
+}
+h2 span :nth-child(15n+1){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+2){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+3){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+4){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+5){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+6){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+7){
+    transition-delay: 0s;
+}
+
+h2 span :nth-child(15n+8){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+9){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+10){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+11){
+    transition-delay: 0s;
+}
+
+h2 span :nth-child(15n+12){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+13){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+14){
+    transition-delay: 0s;
+}
+h2 span :nth-child(15n+15){
+    transition-delay: 0s;
+}
+h5{
+    position: relative;
+    margin: 20px 0 0;
+    font-size:4em;
+    font-weight: 900;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    } 
+@keyframes animate{
+ 0%{
+    left: 110%
+}
+100%{
+    left: -20%
+}
+}
+
+#mainimage.image p{
+    font-size: 20px;
+    text-align: center;
+    color:green;
+}
+ video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+p{
+    font-size: 20px;
+}
+h5{
+
+    font-size: 50px;
+    color: white;
+    align-items: center;
+    margin: 20px;
+}
+#maineimage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-right: 1px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background-image: url("-student-girl.jpg");
+    
+}
+
+#maineimage p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.bout1{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color:  white;
+    margin:0 auto;/*pour mettre au millieux*/
+    text-transform: uppercase;
+    color: green;
+    font-family: 'Norican', cursive;
+    margin-right: 100px;
+}
+.bout1:hover{
+    background:#262626;
+}
+.clear{
+    clear: both;
+}
+.container{
+    margin-left: 90px;
+    position: relative;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:30px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 420px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    display: grid;
+    z-index: 1;
+    box-sizing: 0 5px 202px rgba(0,0,0,0.2);
+}
+.container .card.content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+height: 400px;
+}
+.container .card:hover.content {
+
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.3s;
+}
+.container .card .imagBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+#université{
+    background-color: #efefef;
+    padding: 60px 0;
+    width: 200%;
+
+}
+#université p{
+    font-size: 15px;
+}
+
+.button-2{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color:  white;
+    margin:0 auto;/*pour mettre au millieux*/
+    text-transform: uppercase;
+    display: inline;
+    font-family: 'Norican', cursive;
+}
+.button-2:hover{
+    background:#c1f0c1;
+}
+
+.box{
+    width: 300px;
+   margin-bottom: : 30px;
+    height: 500px;
+    padding: 7px 7px;
+    border-radius: 10px;
+    left: 20%;
+    top::20%;
+    
+    position: relative;
+    display: flex;
+    background: rgba(0,0,0,0.2);
+    /*grid-template-columns: repeat(auto-fill,minmax(300px,1fr));*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+#formation{
+    position: relative;
+    width: 100%;
+    height: 700vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("39703679-groupe-de-jeunes-étudiants-souriants-attractifs-habillé-décontracté-étudier-ensemble-dans-le-parc-.jpg");
+    height: 580px;
+    
+}
+#formation h5{
+    font-size: 60px;
+    text-align: center;
+}
+#formation p{
+    font-size: 20px;
+    text-align: center;
+}
+#formation .btn-1{
+    padding: 18px 10px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #ddd;
+    border: none;
+    width: 200px;
+    outline: none;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 500px;*/
+    cursor: pointer;
+    transition: opacity .3s linear;
+    margin-right: 100px;
+
+}
+#formation.btn-1:hover{
+    opacity: .7;
+}
+#cho {
+    width: 100%;************************
+}
+#cho h5{
+    color: black;
+    font-size: 60px;
+    text-align: center;
+}
+#cho p{
+text-align: center;
+}
+.form i{
+    width: 26px;
+    float: center;
+    text-align: center;
+}
+.wrap{
+    /*max-width: 960px;*/
+    margin: 10px auto;
+    margin-bottom: 10px;
+    width: 100%;***************************
+}
+.xop-grid{
+    margin:  10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    
+
+
+}
+.xop-grid:after{
+    clear: both;
+}
+.xop-grid:after,.xop-box:before{
+    content: "";
+    display: table;
+}
+.xop-grid li{
+    width: 328px;
+    height: 328px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.xop-box{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition:1s ease-in-out,1s ease-in-out;
+    -moz-transition:1s ease-in-out,1s ease-in-out;
+    transition: 1s ease-in-out,transform 1s ease-in-out;
+}
+.xop-box:hover{
+    transform: scale(1.05);
+}
+.xop-img-1{
+    background:url("etudiant2.jpg") ;
+
+}
+.xop-img-2{
+    background: url("etudiant5.jpg");
+
+}
+.xop-img-3{
+    background:url("etudiant4.jpg");
+
+}
+.xop-img-4{
+    background:url("etudiant6.jpg");
+
+}
+
+
+h6{
+    font-size: 30px;
+    color:white;
+}
+h4{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#contact{
+    width: 400%;
+}
+footer{
+    background: #f1f1f1;
+    padding: 110px 0;
+    width: 100%;
+}
+.footer-contrainer{
+    max-width: 1800px;
+    margin: auto;
+    padding: 60 60px;
+    display: grid;
+    grid-template-columns: repeatauto-fill,minmax(300px,1fr));;
+    gap:30px;
+    align-items: center;
+    position: relative;
+}
+.rights-text{
+    text-align: center;
+}
+.left-col{
+    text-align: center;
+
+}
+.social-media{
+    margin: 20px 0;
+}
+.social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition:.3s linear;
+}
+.social-media a:hover {
+    color: green;
+}
+
+.btn-1{
+    padding: 18px 10px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #ddd;
+    border: none;
+    width: 100px;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+
+}
+.btn-1:hover{
+    opacity: .7;
+}
+.page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+@media screen and (max-width: 960px){
+    .footer-container{
+        max-width: 600px;
+    }
+    
+    .left-col{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and(max-width: 700px){
+    .btn{
+        margin:0;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.co{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom:  1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter:blur(25px);
+    text-align: center;
+
+}
+.co h2{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+.co .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250PX,1fr));
+    text-align: center;
+}
+    .co .row10   .col .inputbox{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+    }
+    .co .row10   .col .inputbox input{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        box-shadow: none;
+        outline: none;
+        font-size: 15px;
+        padding: 0 10px;
+        z-index: 1;
+
+    } 
+    .co .row10   .col .inputbox .text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 30px;
+        display: block;
+        transition: 0.5s;
+        pointer-events:none;
+
+    }
+    .co .row10   .col .inputbox .textarea{
+        position: relative;
+        width:  100%;
+        height: 100%;
+        padding: 10px 0;
+         
+   
+    }
+    .co .row100 .col .inputbox .line {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+    .co .row100 .col  input[type="submit"]{
+        border: none;
+        padding: 10px 40px;
+        cursor: pointer;
+        outline: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .co .row100.col.inputBox input:focus + text,
+    .co .row100.col.inputBox textarea:focus + text{
+        top: -35px;
+        left: -10px;
+    }
+    .co .row100.col.inputBox input:focus + text,
+    .co .row100.col.inputBox textarea:focus + text{
+        height: 100%;
+    }
+  section .row100{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        width:130%;
+        background: #808080;
+        position: absolute;
+
+}
+
+    }
+ section::before .row100{
+    content: '';
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+**********************************
+ .pff{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+   /*background: linear-gradient(to top, rgb(204,166,164), rgb(199,102,102));*/
+    display: flex;
+    justify-content: center;
+        /*align-items: center;*/
+    font-family: 'Lato';
+    overflow: hidden;
+}
+.card2 {
+    border-radius: 16px;
+    width: 1200px;
+    height: 700px;
+    background: url("2106139-amphi-sorbonne-original.jpg")no-repeat;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.5);*/
+}
+
+.content2 h3{
+    font-size: 40px;
+    color: #d2691e;
+    font-family: 'Norican', cursive;
+}
+.content2 h4{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+.card2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);*/
+}
+
+
+.card2 .imggg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.card2 .imggg span {
+    width: 100%;
+    height: 100%;
+    background: url("2106139-amphi-sorbonne-original.jpg") no-re;
+    transition: 0.5s;
+}
+
+
+.card2 .imggg span:nth-child(1) {
+    transition-delay: 0s;
+    background-position: 0;
+}
+
+.card2 .imggg span:nth-child(2) {
+    transition-delay: 0.1s;
+    background-position: 33.33%;
+}
+.card2 .imggg span:nth-child(3) {
+    transition-delay: 0.2s;
+    background-position: 66.66%;
+}
+.card2 .imggg span:nth-child(4) {
+    transition-delay: 0.3s;
+    background-position: 100%;
+}*/
+
+.card2:hover .imggg > span {
+    transform: translateY(-100%);
+}
+
+
+.content2 { 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    /*padding: 20px 20px;*/
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.card2:hover .content2 {
+    transform: translateY(0%);
+    transition: 1s;
+    transition-delay: 0.1s;
+}
+@media only screen and (max-width: 1300px){
+    #maineimage{
+        width: 100%;
+        margin-left: 1px;
+        
+    }
+    #formation{
+        width: 100%;
+        ;
+    }
+    #contact{
+        width: 100%;
+       
+    }
+    
+    #h1{
+        width: 100%;
+        
+    }
+    .xop-grid{
+        width: 100%;
+        
+    }
+    #cho{
+        width: 100%;
+        
+    }
+    .menu-toggle{
+        text-align: center;
+    }
+
+}
