@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>university website</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="utf-8">
+         <link rel="stylesheet" href="Aboutpage.css">
+         <link rel="stylesheet" href="homepage.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+    </head>
+    <body>
+        <section class="psudo-header">
+            
+            <nav>
+               <a href="Aboutpage.html"><img src="logo.png"></a>
+               <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="closemenu()"></i>
+                   <ul>
+                       <li><a href="homepage.html">HOME</a></li>
+                       <li><a href="Aboutpage.html" id="active">ABOUT</a></li>
+                       <li><a href="course page.html">COURSE</a></li>
+                       <li><a href="blog bage.html">BLOG</a></li>
+                       <li><a href="Contact Us.html">CONTACT</a></li>
+                   </ul>
+               </div>
+               <i class="fa fa-bars" id="fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+         
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the world's largest University </h1>
+                    <p>We are a federal public research university located in London, England, United Kingdom.
+                    The university was established by royal charter in 1836,
+                    as a degree-awarding examination board for students holding certificates from University College
+                    London and King's College London and "other such other Institutions, corporate or unincorporated,
+                    as shall be established for the purpose of Education, whether within the Metropolis 
+                    or elsewhere within our United Kingdom", allowing it to be one of three institutions to claim the title Of
+                    the third-oldest university in England, and moved to a federal structure in 1900. 
+                    It is now incorporated by its fourth (1863) royal charter and governed by the University of London Act 2018.
+                    It was the first university in the United Kingdom to introduce examinations for women in 1869 and,
+                    a decade later, the first to admit women to degrees. In 1913, it appointed Caroline Spurgeon as
+                    only the second woman professor at a British university,[16] and in 1948 was the first British
+                     university to appoint a woman as its vice chancellor. The university's member institutions house the oldest teaching hospitals in England.</p>
+                    <a href="homepage.html" target="_block" class="header-btn" id="red-btn" >EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="about.jpg" >
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            
+            <h4>About us</h4>
+            <p>We are one of the largest, most diverse universities in the 
+            UK with over 120,000 students in London,<br> and a further 50,000 studying
+             across 190 countries for a University of world degree.</p>
+             <div class="icons">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+             </div>
+        </footer>
+
+
+        <!-- script of the sidebar-->
+        <script>
+            var show = document.getElementById("navlinks");
+            function showmenu(){
+                show.style.right = "0";
+            }
+            function closemenu(){
+                show.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Alpha Living</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<!--the header-->
+	<header>
+		<nav class="navbar">
+			<div class="title"><h1>ALPHA LIVING</h1></div>
+			<a href="#" class="toggle-button">
+				<span class="elem"></span>
+				<span class="elem"></span>
+				<span class="elem"></span>
+			</a>
+			<div class="thelinks">
+				<ul>
+					<li><a href="#hero">Home</a></li>
+					<li><a href="#2">Services</a></li>
+					<li><a href="#3">projects</a></li>
+					<li><a href="#4">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			
+		</nav>	  
+	</header>
+	<!--header ends-->
+	<script src="main.js"></script>
+
+
+	<!--home-->
+	<section class="hero" id="hero">
+		<div class="container">
+			<h2 class="sub-headline">
+				<span class="first-letter">B</span>ienvenidos
+			</h2>
+			<h1 class="headline">Alpha living</h1>
+			<div class="headline-description">
+				<div class="separator">
+					<div class="line line-left"></div>
+					<div class="symb"><span>&#9830;</span></div>
+					<div class="line line-right"></div>
+				</div>
+				<div class="single-animation">
+					<h5>Bring Your Visions To Life</h5>
+					<a href="#feature" class="btn cta-btn">see more</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--info-->
+	<section id="feature" data-aos="fade-up" data-aos-duration="1000">
+		<div class="title-text">
+			<p>INFO</p>
+			<h1>Who Are We</h1>
+		</div>
+		<div class="feature-box">
+			<div class="features">
+				<h1>Interior Design company</h1> 
+				<div class="features-desc">
+					<div class="feature-icon">
+						<i class="fa fa-home"></i>
+					</div>
+					<div class="feature-text">
+						<p>We have done countless pojects ,satisfying a customer after another. you just have to tell us your likings and visions , and we will make sure you get what you asked for and even better. from houses to restaurants and hotels :we got it all covered.</p>
+					</div>
+				</div>
+				<h1>International services</h1> 
+				<div class="features-desc">
+					<div class="feature-icon">
+						<i class="fa fa-globe"></i>
+					</div>
+					<div class="feature-text">
+						<p>Alpha Living has branches all around the world making our services available wherever you please. </p>
+					</div>
+				</div>
+
+				<h1>House made products</h1> 
+				<div class="features-desc">
+					<div class="feature-icon">
+						<i class="fa fa-bed"></i>
+					</div>
+					<div class="feature-text">
+						<p>all furniture and products used in the projects are handmade in our factories by meticulous and talented employees.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="features-img">
+				<img src="media/logo.jpeg">
+			</div>
+
+		</div>
+	</section>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+	<!-- services-->
+
+
+
+	<div class="services"  data-aos="fade-up" data-aos-duration="1000" id="2">
+		<div class="stitle">
+			<p>SERVICES</p>
+			<h1>Our Services</h1>
+		</div>
+		<div id="slider">
+			<figure>
+				<img src="media/hotel.jpg">
+				<img src="media/home.jpg">
+				<img src="media/rest.jpg">
+				<img src="media/pool.jpg">
+				<img src="media/office.jpg">
+			</figure>
+		</div>
+	</div>
+
+	<!--videos-->
+
+	<div class="containerr" data-aos="fade-up" data-aos-duration="1000" id="3">
+		<p>PROJECTS</p>
+		<h1>PROJECT EXAMPLES</h1>
+		<div class="video-container">
+			<div class="video"><video src="media/vid.mp4" muted></video></div>
+			<div class="video"><video src="media/vidd.mp4" muted></video></div>
+			<div class="video"><video src="media/viddd.mp4" muted></video></div>
+			<div class="video"><video src="media/vidddd.mp4" muted></video></div>
+			<div class="video"><video src="media/viddddd.mp4" muted></video></div>
+			<div class="video"><video src="media/vidddddd.mp4" muted></video></div>
+		</div>
+
+		<div class="popup-video">
+			<span>&times;</span>
+			<video src="media/vid.mp4" muted autoplay controls></video>
+		</div>
+	</div>
+	<script>
+		
+		document.querySelectorAll('.video-container video').forEach(vid => {
+			vid.onclick = () =>{
+				document.querySelector('.popup-video').style.display = 'block';
+				document.querySelector('.popup-video video').src = vid.getAttribute('src');
+			}
+		});
+		document.querySelector('.popup-video span').onclick = () =>{
+			document.querySelector('.popup-video').style.display = 'none';
+		}
+	</script>
+
+	<!--reviews-->
+
+	<section class="testimonials" data-aos="fade-right" data-aos-duration="1000">
+		<div  class="testimonialss">
+			<p>REVIEWS</p>
+		</div>
+		<h1>What our clients say</h1>
+
+		<div class="roww">
+			<div class="testimonial-col">
+				<img src="media/ashley.jpg">
+				<div>
+					<p> flawless work,they gave me the house i wanted for years in 3 weeks! i am increadibly pleased with the outcome and would definatly hit them up again</p>
+					<h3>Ashley Hyuga</h3>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+
+				</div>
+			</div>
+
+			<div class="testimonial-col">
+				<img src="media/cole.jpg">
+				<div>
+					<p>AL teams are so professional,they understand my needs, put up with my indecisiveness and the outcome always manages to surpasses my imagination. Keep up the hard work!</p>
+					<h3>Cole Uchiha</h3>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!--about-->
+	<div class="ccontainer" id="4">
+		<div class="ttitle">
+			<p>About us</p>
+			<br>
+			<h1>About Us</h1>
+		</div>
+		<div class="ccontent">
+			<div class="article">
+				<h2>Get to know us more!</h2>
+				<p>  Alpha Living is an algerian interior design business that provides several services:
+					<br>
+					homes, hotels, offices, restaurants, pools..
+					We have a total of 19 branches globally:
+					Algeria:Constantine,Algiers,Oran/ Tunisia:Tunis/ Morrocco:Casablanca/ Egypet:Cairo/ UAE:Dubai/ France:Paris,Monaco/ Spain:Madrid/ England:London/ Korea:Seoul/ Japan:Tokyo/ USA:New York,Los Angeles/ Canada:Toronto/ Brazil:Sao Paulo/ India:Mumbai/ South Africa:Cape Town ;an impressive line up right!
+					the company was created in 2012 by Zaid Sitelli: the current owner; Each branch has a director and a team of its own.
+					<br>
+					The production factories are all located in Algeria delievering the products to the branches by command.
+					Alpha Living never fails its customers and adds a 'if you don't like it we will redo it for free' policy making it the most trusted company by customers: resulting in the 117 projects already done.
+				</p>
+				<a href="#5" class="bbutton">meet staff</a>
+			</div>
+			<div class="image-section">
+				<img src="media/company.jpg">
+			</div>
+
+		</div>
+	</div>
+
+	<!--directors-->
+	<div class="cccontainer" data-aos="fade-up" data-aos-duration="1000" id="5">
+		<div class="containerrr">
+		<p>directors</p>
+	    </div>
+
+		<h1 class="heading"><span>meet</span>The Directors</h1>
+		<div class="stuff">
+			<div class="profiles">
+				<div class="profile">
+					<img src="media/chris.jpg" class="profile-img">
+					<h3 class="user-name">Chris</h3>
+					<h5>Chris H</h5>
+					<p>CEO.</p>
+				</div>
+			</div>
+
+
+			<div class="profiles">
+				<div class="profile">
+					<img src="media/sam.jpg" class="profile-img">
+					<h3 class="user-name">Zaid</h3>
+					<h5>Zaid S</h5>
+					<p>Executive Chairman of the Board.</p>
+				</div>
+			</div>
+
+
+
+			<div class="profiles">
+				<div class="profile">
+					<img src="media/tom.jpg" class="profile-img">
+					<h3 class="user-name">Tom</h3>
+					<h5>Tom H</h5>
+					<p>Chief Entrepreneur.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+<!--contact-->
+<div class="contaaact">
+	<a href="contact.html" >Contact Us</a>
+</div>
+
+
+
+
+<!--footer-->
+
+		<!--footer-->
+		<footer>
+			<div class="footer-content">
+				<a class="gotopbtn" href="#"><i class="fas fa-angle-up"></i></a>
+				<h3>Alpha Living</h3>
+				<p>Bring your visions to life.</p>
+				<ul class="socials">
+
+					<li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://twitter.com/login?lang=fr" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://www.pinterest.fr/login/" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+					<li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>copyright &copy; 2021 AlphaLiving. designed by <span>Luna</span></p>
+			</div>
+		</footer>
+
+
+</body>
+</html>
