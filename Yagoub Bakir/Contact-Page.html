@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactstyle.css" />
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="beforeHeader">
+      <div class="container">
+        <span class="big-circle"></span>
+        <img src="contact-img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolorum adipisci recusandae praesentium dicta!
+            </p>
+
+            <div class="info">
+              <div class="information">
+                <img src="contact-img/location.png" class="icon img1" alt="" >
+                <p>Faculty NTIC, Abdelhamid Mehri Constantine University 2</p>
+              </div>
+              <div class="information">
+                <img src="contact-img/email.png" class="icon img2" alt="" >
+                <p>startcodingclub@outlook.com</p>
+              </div>
+              <div class="information">
+                <img src="contact-img/phone.png" class="icon img3" alt="" >
+                <p>0549 60 18 02</p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form action="Contact-Page.html" autocomplete="off">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+
+    <header>
+      <div class="nav-container">
+        <div class="nav-bar">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <a onclick="DoAnimation();" class="logo">
+                <img src="img/StartCodingClubLogo.png" alt="logo image">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="anyhtml.html#theHome" class="nav-link ">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="anyhtml.html#theAboutUs" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="anyhtml.html#theNews" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="anyhtml.html#theEvents" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="anyhtml.html#theJoinUs" class="nav-link">Join Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </header>
+    
+    
+
+    <script>
+        $(function(){
+            var src1 = $(".img1").attr('src');
+            var src2 = $(".img2").attr('src');
+            var src3 = $(".img3").attr('src');
+            $(".img1").hover (function(){
+              $(this).attr('src', src1.replace('.png', '.gif'));
+            }, function(){
+              $(this).attr('src', src1);
+            });
+            $(".img2").hover (function(){
+              $(this).attr('src', src2.replace('.png', '.gif'));
+            }, function(){
+              $(this).attr('src', src2);
+            });
+            $(".img3").hover (function(){
+              $(this).attr('src', src3.replace('.png', '.gif'));
+            }, function(){
+              $(this).attr('src', src3);
+            });
+        });
+
+    </script>
+    <script src="js/contactJS.js"></script>
+    <script src="js/nav-barJS.js"></script>
+
+  </body>
+</html>
