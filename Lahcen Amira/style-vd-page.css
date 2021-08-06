@@ -1,0 +1,132 @@
+/*general*/
+*{
+    margin:0;
+    padding: 0
+    }
+    p{
+    line-height: 20px;
+    color: #777;
+    
+    }
+    body{
+    font-family:Arial,sans-serif;
+    font-size: 15px;
+    }
+    
+    .clear{
+    clear: both; /*drna classe f html fargha w 3tinaha had t3lima f css poure tfsl bin les 2 elem ya3i
+    y3ni gotlha mat7ati fihawalo */
+    }
+    /*header*/
+    .clr{
+    color: #475839;
+    }
+    h1{
+    font-family: 'Crete Round ';
+    font-size: 30px;
+    color: #444;
+    /*position: relative;
+    right: 200px;*/
+    }
+    header{
+    
+    height: 110px;
+    /* background-color: #777;*/
+    background-image: linear-gradient(to bottom,#b2dd8f,white);
+    
+    }
+    header h1{
+    float: left;
+    margin-top:32px;
+    position: relative;
+    right: 300px;
+    }
+    header nav{
+    
+    float: right;
+    margin-top: -25px;
+    font-family:Arial,sans-serif;
+    
+    }
+    .wrapper{
+    width:940px;
+    margin:0 auto;
+    padding: 0 10px;
+    
+    }
+    ul{
+    list-style: none;
+    }
+    header nav ul li a{
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    
+    }
+    header nav ul li{
+    /* float: left; */
+    display: inline-block;
+    
+    }
+    
+    a{
+    
+    text-decoration: none;
+    color: #444;
+    
+    }
+    
+    /*labels*/
+    
+    .label1{
+    margin-left: 20px;
+    font-family: 'Parisienne', cursive;
+    font-size:20px;
+    }
+    .label2{
+    
+    margin-left: 500px;
+    font-family:'Parisienne', cursive;
+    font-size: 20px;
+    }
+    .label3{
+    margin-right: 20px;
+    text-align: right;
+    font-family: 'Parisienne', cursive;
+    font-size: 20px;
+    text-shadow: #b2dd8f;
+    }
+    
+    /*vedio*/
+    .vd video {
+    height:300px;
+    width: 500px;
+    margin-left: 500px;
+    
+    }
+    
+    /*footer*/
+    footer{
+    height: 260px;
+    /*background-color: #444;*/
+    background-image: linear-gradient(to top,#b2dd8f,white);
+    
+    }
+    footer h1{ /*la les noveau regle ecrase lesencien regle c est il existe 2 regle de meme sence par ceque le
+    plus prisiser*/
+    color: #444;
+    text-align: center;
+    padding-top: 80px;
+    }
+    
+    .copyright{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    /*color: #777;*/}
+    
+    /*icon*/
+    .icon {
+    margin-left: 1300px;
+    }

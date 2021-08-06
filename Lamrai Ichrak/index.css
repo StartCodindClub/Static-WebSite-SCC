@@ -1,0 +1,259 @@
+/*General*/
+
+*{
+
+    margin:0;
+    padding: 0;
+    
+    }
+    
+    
+    p{
+        line-height: 20px;
+        color: #444;
+    
+    }
+    
+    body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    
+    
+    }
+    
+    /*Header*/
+    h1{
+    font-family:'Crete Round';
+    font-size: 46px;
+    color: #c25e0d;
+    
+    
+    }
+    
+    
+    Header{
+        height: 120PX;
+    
+    
+    }
+    Header h1{ 
+    float: left;
+    margin: 32px;
+    
+    }
+    
+    
+    header nav ul{
+    float:right ;
+    margin-top: 50px
+    
+
+
+    
+        
+    }
+    .wrapper{
+        width: 930px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+
+    
+    }
+    ul{
+        list-style: none;
+    }
+    
+    
+     header nav ul li a{
+         text-transform: uppercase;
+         font-weight: bold;
+         margin-right: 20px;
+
+     }
+
+     header nav ul li {
+         float: left;
+         display: inline-block;
+
+     }
+     a {
+
+        text-decoration: none;
+        color: #e6e3e3 ;
+        background-color: rgb(170, 86, 30);
+        border-radius: 3px;
+    
+     }
+    
+
+     /*main image*/
+     #main-image{
+         height: 540px;
+        background-image: url('images/main.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       
+
+        }
+    
+     h2{
+         font-size: 30px;
+         color: rgb(12, 7, 90);
+
+     }
+     #main-image h2{
+         font-weight: normal;
+         text-transform: uppercase;
+         text-align: center;
+         padding: 150p 0 40p;
+         margin-bottom: 20px;
+     }
+     
+
+     .button-1 {
+        width: 100px;
+        height: 32px;
+        background-color: rgb(28, 45, 145);
+        color: rgb(37, 37, 39);
+        font-size: 18px;
+        margin: 0 auto;
+        line-height: 50px;
+        border-radius: 3px;
+        display: block;
+     }
+     .button-1:hover {
+         background: burlywood;
+     }
+
+     /*steps*/
+      
+     #stps ul{
+         margin: 80px;
+
+     }
+     #steps ul li{
+         width: 300px;
+         float: left;
+         padding-top: 140px;
+         text-align: center;
+         margin-right: 10px;
+
+     }
+
+     h4{
+         font-size: 24px;
+         color: rgb(37, 37, 39);
+
+     }
+    
+     #steps h4 {
+         text-transform: uppercase;
+         margin-bottom: 20px;
+     }
+
+     #steps p {
+         margin-bottom: 20px;
+
+     }
+
+     #step-1{
+         background: url(images/steps-icon1.png.png);
+         background-repeat: no-repeat;
+     }
+     #step-2{
+         background: url(images/steps-icon2.png.jpg);
+         background-repeat: no-repeat;
+         background-size: 100% 100%S;
+
+     }
+     #step-3{
+        background: url(images/steps-icon3.png);
+        background-repeat: no-repeat;
+    
+    }
+
+    /*Contact us*/
+
+    h3{
+        font-size: 30px;
+        color: rgb(25, 14, 173);
+
+    }
+
+
+    #Contact {
+        padding: 60px;
+        text-align: center;
+
+    }
+    #contact h3{
+        width: 400px;
+        text-transform: uppercase;
+        margin: 0 auto 20px auto;
+        border-bottom: 1px solid #b60d0d;
+        padding: 20px;
+    
+
+    }
+ 
+
+      form{
+          margin: 60px 0 20px 0;
+      }
+
+      label{
+          font-weight: bold;
+          font-size: 20px;
+          margin-right: 10px;
+          color: red;
+
+      }
+
+      input[type="text"] {
+          padding: 10px;
+          font-size: 20px;
+          margin-right: 20px;
+          border: 2px solid #444;
+          border-radius: 3px;
+      
+      
+        }
+
+
+        .button-3{
+            color: rgb(24, 9, 9);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px;
+            background-color:#d32222;
+            border-style: none;
+            border-radius: 30px;
+
+        }
+
+        /*footer*/
+        footer{
+            height: 260px;
+            background-color:#c25e0d ;
+
+        }
+
+        footer h1 {
+            color: #fff;
+            text-align: center;
+            padding-top: 80px;
+
+
+        }
+        .copyright{
+            text-align:center;
+            font-weight: bold;
+            padding-top: 30px;
+            color: #777;
+
+        }
+
+
+    
+    

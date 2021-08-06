@@ -1,0 +1,157 @@
+.logo{
+	padding: 5px 0px 0 80px;
+	width: 100px;
+	height: auto;
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 70px;
+	margin-top: 30px;
+}
+nav ul li{
+	/*background: white;*/
+	position: relative;
+	list-style: none;
+	display: inline-block;
+}
+nav ul li a{
+	display: block;
+	padding: 0 15px;
+	color: #444;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 20px;
+	font-family: 'Crete Round', serif;
+}
+nav ul li a:hover{
+	background:#ebadc2;
+}
+nav ul ul{
+	position: absolute;
+	top: 50px;
+	display: none;
+	margin-top: 0;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li{
+	width: 260px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+nav ul ul ul li{
+	position: relative;
+	top: -60px;
+	right: 150px;
+}
+body{
+	background: white;
+}
+section{
+	padding: 2rem 9%;
+}
+.home{
+	display: flex;
+	flex-wrap;
+	gap:1.5rem;
+	max-height: 100vh;
+	align-items:center;
+	background: url(../f1.png) no-repeat ;
+	background-size: cover;
+	background-position: center;
+}
+.home .content{
+	flex:1 1 40rem;
+	padding-top:6.5rem; 
+}
+.home .image{
+	flex:1 1 40rem;
+}
+.home .image img{
+	width: 100%;
+	padding: 1rem;
+	animation:float 3s linear infinite;
+}
+@keyframes float{
+	0%, 100%{
+	 transform: translateY(0rem);
+	}
+	50%{
+	 transform: translateY(3rem);
+	}
+}
+.home .content h3{
+	font-size: 40px;
+	color: #D51425;
+}
+.home .content p{
+	font-size: 1.7rem;
+	color: #333;
+	padding: 1rem 0;
+}
+/*                    */
+.speciality{
+	background: #D51425;
+}
+.speciality .box-container{
+	display: flex;
+	flex-wrap:wrap;
+    gap:1.5rem;
+}
+.speciality .box-container .box{
+	flex:1 1 19rem;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+	border: 0.1rem solid rgba(0,0,0,.3);
+	cursor: pointer;
+	border-radius: .5rem;
+}
+.speciality .box-container .box .image{
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	position: absolute;
+	top: -100%;left: 0;
+}
+.speciality .box-container .box .content{
+	text-align: center;
+	background: #fff;
+	padding: 2rem;
+}
+.speciality .box-container .box .content img{
+	margin: 1.5rem 0;
+}
+.speciality .box-container .box .content h3{
+	font-size: 2.5rem;
+	color: #333;
+}
+.speciality .box-container .box:hover .image{
+	top: 0;
+}
+.speciality .box-container .box:hover .content{
+     transform: translateY(100%);
+ } 
+ .heading{padding: 1rem;
+         text-align: center;
+         font-size: 3.5rem;
+         color: #333;
+}
+.heading span{
+	color:white;
+}
+.copyrightText{
+	width: 85.1%;
+	background:#181818;
+	padding: 8px 100px;
+	text-align: center;
+	color: #999;
+}
+.copyrightText span{
+	color: red;
+	font-size: 20px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE <html>
+<head>
+	<title> Team</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+<div class="dropdwn">
+  <nav>
+         <img class="logo" src="lr.png" >
+         <ul>
+          <li><a href="wedding.html"> Home</a> </li>
+          <li><a href="#"> About <i class="fas fa-caret-down"></i></a> 
+              <ul> 
+                 <li><a href="#Com"> Our Company</a> </li>
+                 <li><a href="team.html"> Our Team</a> </li>
+              </ul>
+              </li>
+          <li><a href="#service"> Services <i class="fas fa-caret-down"></i></a> 
+          <ul>
+            
+              </ul>
+            </li>
+            <li> <a href="shop.html"> Shop</a>  </li>
+            <li> <a href="contact.html" > Contact</a>    </li>
+         </ul>
+    </nav>
+ </div>
+<!--  Video -->
+   <div class="container">
+     <h1>VIDEO GALLERY</h1>
+     <div class="row">
+      <div class="col">
+      <div class="feature-img">
+       <img src="5.jpg" width="90%">
+       <img src="play1.png" class="play-btn"  onclick="playvideo('v1.mp4')"> 
+      </div>
+      </div>
+         <div class="col">
+               <div class="small-img-row">
+                 <div class="small-img">
+                  <img src="red2.png" width="45%">
+                  <img src="play1.png" class="play-btn" onclick="playvideo('v2.mp4')"> 
+                 </div>
+               <p>Some details about Jums & Janna's  party.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22 August.</p>
+               </div>
+               <div class="small-img-row">
+                 <div class="small-img">
+                  <img src="red.png" width="45%">
+                  <img src="play1.png" class="play-btn" onclick="playvideo('v4.mp4')"> 
+                 </div>
+               <p>Some details about Mark & Romy's  party.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 July.
+                </p>
+               </div>
+               <div class="small-img-row">
+                 <div class="small-img">
+                  <img src="red3.png" width="45%">
+                  <img src="play1.png" class="play-btn" onclick="playvideo('v2.mp4')"> 
+                 </div>
+               <p> Some details about Andy & Bella's  party. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 November.
+                </p>
+               </div>
+         </div> 
+     </div>
+   </div>
+<div class="video-player" id="videoPlayer">
+    <video style="height:100%;width: 0100%" controls autoplay id="myvideo"> <source src="v1.mp4" type="video/mp4" ></video>
+    <img src="close.png" class="closebtn" onclick="stopvd()">
+   </div>
+   <script >
+   var videoPlayer= document.getElementById('videoPlayer');
+   var myvideo= document.getElementById('myvideo');
+
+   function stopvd(){
+         videoPlayer.style.display="none";
+   }
+   function playvideo(file){
+    myvideo.src=file;
+    videoPlayer.style.display="block";
+   }
+   </script>
+  <!-- Team -->
+  <div class="team-section">
+    <h1>Our Great Team</h1>
+    <span class="border"></span>
+    <div class="ps">
+      <a href="#p2"><img src="p2.jpg"></a>
+       <a href="#p1"><img src="p1.png"></a>
+       <a href="#p3"><img src="p3.png"></a>
+    </div>
+       <div class="section" id="p2">
+        <span class="name">Shafeeq Nour El-Din</span>
+        <span class="border"></span>
+        <p>Shafeeq Nour El-Din is a self-made, persevering, ambitious and strong-willed wedding designer. After years of hard and hard work, his efforts paid off, and he succeeded in overcoming the biggest obstacles until he became famous for his name in the world. He developed himself by himself and proved himself, to prove that success is self-reliance and foundations Wedding design and organization company. </p>
+       </div>
+       <div class="section" id="p1">
+        <span class="name">SLiz Allen</span>
+        <span class="border"></span>
+        <p>SLiz Allen - Make Up Artist· . she worked in the make up industry for over 20 years covering everything from weddings fashion shoots editorial body painting. </p>
+       </div>
+       <div class="section" id="p3">
+        <span class="name">Robert Frank</span>
+        <span class="border"></span>
+        <p>Robert Frank is a photographer. also known for his documentary films and videos as well as his photographic manipulations and other photomontages.  </p>
+       </div>
+  </div>
+  <div class="copyrightText">
+    <p>Copyright<i class="far fa-copyright"></i>2021  <span>Le Reve Events.</span> All Rights Reserved </p></div>
+</body>
+</html>
