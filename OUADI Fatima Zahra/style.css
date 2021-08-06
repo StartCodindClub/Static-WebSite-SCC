@@ -1,0 +1,476 @@
+
+*{
+
+margin:0;
+padding: 0; 
+
+}
+
+
+p{
+	line-height: 20px;
+	color:#777;
+
+}
+
+body{
+font-family: 'Playball', cursive;
+font-size: 20 px;
+
+}
+
+/*Header*/
+.orange{
+
+
+	color:	#F08080;
+}
+h1{
+font-family: 'Syncopate', sans-serif;
+ font-size: 80px;
+ color:  #000000;
+}
+
+
+header {
+
+height: 100px;
+}
+header h1 {
+
+float: all;
+margin-top: 40px;
+
+
+}
+header nav {
+float: center;
+margin-top: 30px;
+margin-left: 50px;
+
+}
+
+.wrapper{
+
+	width:1100px; 
+	margin :auto;
+	padding: 0 10px;
+
+
+}
+
+
+
+
+
+ul{
+
+list-style: none;
+
+}	
+header nav ul li a{
+	font-weight: lighter;
+	margin-right: 50px;
+	text-transform: inherit;
+	text-shadow: 2px 2px 5px black;
+}
+
+header nav ul li {
+
+	float: left;
+	display: inline-block;
+	font-weight: lighter;
+
+}
+
+a {
+	font-family: 'Fuggles', cursive ;
+	 font-size: 43px;
+
+	color:#99ABB9;
+
+}
+
+
+
+h2{
+	font-size: 55px;
+	color:#666666
+}
+
+#main-image{
+	height:1300px;
+	background: url('memane/last.jpg') ;
+	position: center;
+	}
+
+#main-image h2{
+
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 450px 10px 40px 10px;
+	margin-bottom: 20px;
+}
+.button-1{
+	width: 120px;
+	height: 50px;
+	background-color:#F08080;
+	color: #fff;
+	font-size: 25px;
+	margin: 0 auto;
+	line-height:50px;
+	text-align: center;
+	border-radius: 3px;
+	display: block;
+
+          }
+
+
+.button-1:hover{
+
+	background-color:#444;
+
+} 
+body {
+  background-color: #d1f3e7;
+}
+#steps ul{
+
+margin: 80px  0;
+}
+
+#steps ul li {
+
+	width: 380px;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	margin-right: 10px;
+	margin-left: 100px;
+}
+h4  {
+		font-family: 'Lobster Two', cursive;
+	font-size:30px;
+	color: #444;
+	text-align: center;
+
+}
+	#steps h4 {
+
+text-transform: uppercase;
+margin-bottom: 5px;
+margin-left: 90px;
+width: 200px;
+  height: 70px;
+  transition: width 20s;
+		text-align: center;
+
+}
+#steps:hover {
+  width: 300px;}
+  		
+p{
+	font-weight:bold ;
+}
+#steps p{
+	margin-bottom: 20px;
+
+}
+h5  {
+		font-family: 'Lobster Two', cursive;
+
+	font-size:30px;
+	color:#CCCECC;
+
+}
+#steps h5{
+
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+#step-1{
+
+	background: url('memane/bloc.jpg') top center;
+}
+#step-2{
+
+	background: url('memane/bloc.jpg') top center;
+}
+#step-3{
+
+	background: url('memane/bloc.jpg') top center;
+}
+.clear{
+	clear: both;
+}
+
+#possibilities {
+
+padding: 60px 0;
+}
+
+#possibilities article {
+	width: 400px; 
+	height: 310px;
+	border-radius: 10px;
+margin-bottom: 70px;
+margin-left: 350px;
+
+}
+
+article h4 {
+	border-bottom: 3px solid #EDE6E0;
+	padding-bottom: 20px;
+	text-transform: inherit;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+article h5 {
+	border-bottom: 3px solid #EDE6E0;
+	padding-bottom: 20px;
+	text-transform: inherit;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+.overlay {
+	text-align:center;
+	box-sizing:border-box;
+
+}
+#possibilities p{
+
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+.button-2 {
+
+	color:#fff;
+	background-color:#F08080; 
+	border-radius: 5px;
+margin-left: 80px;
+margin-right: 80px;
+}
+
+.button-2:hover {
+color:  #fff;
+background-color:#999999;
+
+}
+/* #possibilities p{
+
+} */
+body {
+    height: 100%;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg") center center fixed;
+    background-size: cover;
+}
+.shade {
+ 
+    background-image: linear-gradient, transparent;
+}
+
+article {
+ 
+
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+ }
+ 
+h3{
+	font-size: 30px;
+	color:#444;
+ box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+}
+#contact {
+
+	padding: 60px 0;
+	text-align: center;
+}	
+
+#contact h3{
+	width: 270px;
+	text-transform: uppercase;
+	margin: 0 auto 20px auto;
+	border-bottom: 2px solid #000000 ;
+	padding-bottom: 20px; 
+
+}
+form{
+
+margin: 60px 0 20px 0; 
+
+}
+form p{
+	font-family: 'Syncopate', sans-serif;
+}
+
+label{
+	font-weight: lighter;
+	font-size: 20px;
+	margin-right: 10px;
+	color: #000000;
+
+}
+input[type="text"] {
+padding: 10px;
+font-size: 20px;
+margin-right: 20px;
+border: 2px solid #ddd;
+border-radius: 5px;
+
+}
+
+
+.button-3{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px;
+	background-color: #02b8dd;
+	border-style: none;
+	border-radius:3px;
+
+}
+
+.button-3:hover{
+
+color: #fff;
+background-color: #444;
+}
+
+a {
+		text-decoration: underline;
+
+	  		display: block;
+	  		height: 100%;
+	  		color: #FFFFFF;
+	  		padding: 10px 50spx;
+		}
+
+.fa {
+  font-size: 30px;
+   margin: 5px 2px;
+
+}
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+	
+.fa-twitter {
+  background: #55ACEE;
+    text-align: center;
+    text-decoration: none;
+margin-bottom: 15px;
+  color: white;
+margin-left: 950px;
+margin-right: 700px;
+  width: 200px;
+  box-shadow: 5px 10px #888888;
+border-radius: 50%;}
+
+.fa-twitter p{
+	font-family: 'Syncopate', sans-serif;
+	margin-bottom: 100px;
+  width: 200px;
+  background: #F08080;
+font-weight: bold;
+font-size:22px ;
+border-radius: 3px;
+
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  	text-align: center;
+margin-left: 950px;
+margin-right: 700px;
+border-radius: 50%;
+  width: 200px;
+    text-decoration: none;
+  box-shadow: 5px 10px #888888;
+
+}
+.fa-instagram {
+  background: #c13584;
+  color: white;
+  margin-left: 950px;
+margin-right: 700px;
+margin-bottom: 15px;
+border-radius: 50%;
+  width: 200px;
+   text-align: center;
+   text-decoration: none;
+  box-shadow: 5px 10px #888888;
+
+}
+
+
+footer{
+
+height: 260px;
+background-color: #444;
+
+}
+
+footer h1{
+
+	color:#fff;
+	text-align: center;
+	padding-top: 80px;
+	border-bottom: 2px solid #000000;
+    padding-bottom: 20px;
+}
+
+.copyright{
+
+	text-align: center;
+	font-weight: bold;
+	padding-top:2   0px;
+	color:#777;
+}
+@media only screen  and (max-width: 1140px){
+#main-image{
+	width: 1300px;
+}
+header{
+	margin-left: 90px;
+}
+footer{
+	width: 1300px;
+}
+#steps{	margin-left: 90px;
+}
+#possibilities{
+	margin-left: 40px;
+}
+/* #social {
+ } */
+.fa-twitter{
+	margin-left: 550px;
+	margin-bottom: 20px;
+	font-size: 50px;
+	border-radius: 200%;
+}
+.fa-youtube {
+	margin-left: 550px;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+.fa-instagram{
+	margin-left: 550px;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+#contact{
+	margin-left: 50px;
+}
+}

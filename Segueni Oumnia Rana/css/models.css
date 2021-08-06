@@ -1,0 +1,474 @@
+/*General*/
+html{
+	scroll-behavior:smooth;
+}
+*{
+
+margin:0;
+padding: 0; 
+
+}
+
+
+p{
+	line-height: 20px;
+	color:#FFFFFF;
+	
+
+}
+
+body{
+font-family: Arial, sans-serif;
+font-size: 15 px;
+background: #000000;
+}
+
+
+/*Header*/
+.orange {
+
+
+	color:#000000;
+}
+
+
+h1{
+
+ font-family: 'Crete Round';
+ font-size: 45px;
+ color: #FFFFFF;
+
+
+}
+
+
+header {
+position: fixed;
+background-color: #000000;
+height: 100px;
+width: 100%;
+top: 0px;
+
+}
+
+
+header h1 {
+
+float:left;
+margin-top: 32px;
+
+
+}
+
+
+header nav {
+float: right;
+margin-top: 50px;
+
+}
+
+
+.wrapper{
+
+	width:940px; 
+	margin:0 auto;
+	padding: 0 10px;
+
+
+}
+
+ul{
+
+list-style: none;
+
+}	
+
+header nav ul li a{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 20px;
+
+}
+
+header nav ul li {
+
+	float:left;
+	display: inline-block;
+
+}
+
+
+a {
+
+	text-decoration: none;
+	color:#444;
+}
+
+/* main image*/
+#main-image{
+	padding-top: 100px;
+	padding-bottom: 0px;
+	margin: 90px;
+	height: 580px; 
+	background: url("/Users/21355/Desktop/models/model01.jpg") no-repeat center ; stu
+	position: center; 
+}
+
+h2{
+
+	font-size: 55px;
+	color:#ffefd5;
+}
+
+#main-image h2{
+
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 150px 0 40px 0;
+	margin-bottom: 20px;
+
+}
+
+
+.button-1{
+	width: 120px;
+	height: 50px;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height:50px;
+	text-align: center;
+	border-radius: 3px;
+	display: block;
+
+}
+
+
+
+.button-1:hover{
+
+
+	background: #02b8dd;
+
+
+}
+
+/*Steps*/
+#steps{
+	padding: 90px 30px 30px 0;
+}
+#steps .wrapper{
+	padding: 20px;
+}
+
+#steps ul{
+
+margin: 5px 0;
+
+}
+
+#steps ul li {
+float: right;
+	width: 290px;
+	padding-top: 10px;
+	text-align: center;
+	margin-right: 90px;
+ margin-left: 50px;
+	padding-left: 40px;
+}
+
+h4 {
+	font-size:24px;
+	color:#ffefd5;
+	padding-top: 10px;
+
+}
+
+#steps .ti {
+justify-content: center;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 20px;
+margin-top: 0px;
+
+}
+
+#steps p{
+	margin-bottom: auto;
+
+}
+#step-1 {
+	margin: 20px;
+
+}
+#step-2 {
+	margin: 20px;
+}
+#step-3 {
+	margin: 20px;
+}
+#step-4 {
+		margin: 20px;
+	
+}
+#step-5 {
+	margin: 20px;
+
+}#step-6 {
+	margin: 20px;
+
+
+}
+
+.clear {
+
+	clear:both;
+}
+/*staff*/
+
+#staff{
+	padding: 45px 0 15px 0;
+}
+
+#myVideo{
+	width: 90%;
+	height: 70%;
+	justify-content: center;
+	text-align: center;
+	margin-left: 5%;
+}
+#staff .p{
+	text-align: center;
+	
+}
+
+.wrapper2{
+	text-align: center;
+color: #FFFFFF;
+	padding: 20px 30px;
+}
+
+.wrapper2 h1{
+	padding: 30px ;
+}
+
+.bg3{
+	background-color: #303030;
+}
+/*founders*/
+
+#founders .founders-boxes {
+  display: flex;
+}
+
+#founders .founders-boxes .founders-box {
+  flex: 1;
+  background-color: #303030;
+  margin: 1rem;
+  border-radius: 5px;
+  line-height: 25px;
+}
+
+#founders .founders-boxes .founders-box p{
+	margin-left: 40px;
+	padding: 10px 0 10px 0;
+	color: #000000;
+	font-size: 20px;
+}
+
+#founders .founders-boxes .founders-box h4{
+	color: black;
+	margin-left: 50px;
+	padding: 10px 0 10px 0;
+	font-size: 30px;
+}
+
+#founders .founders-boxes .founders-box img {
+  width: 70%;
+		height: 40%;
+  display: block;
+  border-radius: 100px;
+  margin-bottom: 40px;
+		margin-top: 40px;
+		margin-left: 50px;
+}
+
+#founders .founders-boxes .founders-box ul{
+  display: flex;
+  list-style: none;
+}
+
+#founders .founders-boxes .founders-box ul li{
+  margin-right: 1px;
+  width: 20px;
+}
+
+#founders .founders-boxes .founders-box ul li a:hover {
+  color: #000000;
+}
+
+
+
+
+/
+/*Contact us*/
+#contact{
+	position: relative;
+	min-height: 100vh;
+	padding:  100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bg-4{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#contact .container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	
+}
+
+#contact .container .contactInfo .box{
+	margin-bottom: 50px;
+	padding: 2px 0 ;
+	display: flex;
+}
+
+#contact .container .contactInfo .box .text{
+	display: flex;
+	margin-left: 120px;
+	font-size: 16px;
+	color: #303030;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+#contact .container .contactInfo .box .text h5{
+	font-weight: 500;
+	font-size: 18px;
+	color: #444;
+}
+
+.contactForm{
+	width: 40%;
+	padding: 30px;
+	background-color:#444;
+	border-radius: 50px;
+	
+}
+
+.contactForm h6{
+	font-size: 25px;
+	color: #FFFFFF;
+text-align: center;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+    resize: none;
+				border-radius: 20px;
+	
+}
+
+.contactForm .inputBox span{
+	position: absolute;
+	left: 20px;
+    padding: 10px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #303030;
+	
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+	color: #ff92a9;
+	font-size: 15px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+	width: 100px;
+	background: #FFFFFF;
+	color: #303030;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+	margin: 10px 80px;
+}
+
+.text-center{
+	text-align: center;
+padding: 100px;
+	padding-bottom: 50px;
+	}
+
+
+/*Footer*/
+
+footer{
+
+height: 260px;
+background-color: #000000;
+
+}
+
+footer h1{
+
+	color:#fff;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.copyright{
+
+	text-align: center;
+	font-weight: bold;
+	padding-top:30px;
+	color:#777;
+}
+@media only screen and (max-widt:700px);{
+	 #wrapper header nav ul{
+			width: 100%;
+			background: white;
+			position: absolute;
+			top: 75px;
+			right: 0;
+			z-index: 2;
+		}
+}
+
+}
+
