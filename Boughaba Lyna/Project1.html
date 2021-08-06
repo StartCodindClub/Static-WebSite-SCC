@@ -1,0 +1,107 @@
+      <!DOCTYPE html>
+      <html>
+      <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      	<meta charset="utf-8">
+      	<title>CS Helper</title>
+            <link rel="icon" type="img/png" href="icon.png">
+      	<link rel="stylesheet" type="text/css" href="Project1.css">
+      </head>
+      <body>
+
+            <header id="main">
+            	<div class="componants">   
+            	  <div id="logo"><img src="logo.png"></div>
+            	   <nav id="menuList">
+                              <span><input class="hover1" id="recherche" type="text" placeholder="Search.." ></span>
+            	   		<span><a class="hover1" href="#">Home</a></span>
+            	   		<span><a class="hover1" href="#box3">Books</a></span>
+            	   		<span><a class="hover1" href="#box2">Softwar</a></span>
+            	   		<span><a class="hover1" href="#box1">Courses</a></span>
+                              <span><a class="hover1" href="#contact-us">Contact Us</a></span>
+            	   </nav>
+                     <span id="list-logo"><img src="list.png" onclick="togglemenu()"></span>
+            	</div>   
+            </header>
+
+            <section id="intro">
+            	<div class="componants">
+                        <img id="image" src="PC.jpg">
+                        <p id="main-prg"><strong>Welcom!</strong style="color: black; " ><br><br>You're looking for some books, software or courses<br>you're in the right place!<br><br><a href="#box1"><button onmousedown="audio.play()" id="explore">Explore</button></a></p>
+                        <div class="clear"></div>
+            	</div>
+            </section>
+
+            <section id="sections">
+            	<div class="container">
+                        <article id="box1">
+                              <img class="imgs" src="courses.png">
+                              <h2>Courses</h2>
+                              <p class="prg">You will fid here some couses that will definetly help you !<br><br><button onmousedown="audio.play()" class="buttons" id="button1">Click!</button></p>
+                        </article>
+
+                        <article id="box2">
+                              <img class="imgs" src="software.png">
+                              <h2>Software</h2>
+                              <p class="prg">You need a software to work with ? click here !<br><br><button onmousedown="audio.play()" class="buttons" id="button2">Click!</button></p>
+                        </article>
+
+                        <article id="box3">
+                              <img class="imgs" src="books.png">
+                              <h2>Books</h2>
+                              <p class="prg">Here you will find some books to learn programming from scratch !<br><br><button onmousedown="audio.play()" class="buttons" id="button3">Click!</button></p>
+                        </article>
+                        <div class="clear"></div>
+                  </div>
+            </section>
+
+            <section id="Help">
+                  <div class="container-2">
+                        <img id="help-img" src="help.jpg">
+                        <p id="help-prg"> <strong>Help Us</strong> <br><br> If you have any recommendation, courses, software and books that helped you,<br>please write it down below to aid us developing our content<br> <input id="type" type="text" placeholder="Type here.."><button id="send" onmousedown="audio.play()">Send</button><br> <img src="idea1.png"> </p>
+                        <div class="clear"></div>
+                  </div>
+            </section>
+
+            <section id="contact-us">
+                  <div class="componants">
+                        <h3>Contact Us</h3>
+                        <hr id="horiz">
+                        <p id="contact-prg">Feel free to contact us any time. We will get back to you as soon as we can!
+                        <br>
+                        <br>      
+                        <input class="contact" type="text" placeholder="Name">
+                        <br>
+                        <input class="contact" type="text" placeholder="E-mail">
+                        <br>
+                        <input class="contact" type="text" placeholder="Message..">
+                        <br>
+                        <button id="contact-send" onmousedown="audio.play()">Send</button></p>
+                  </div>
+            </section>
+
+            <footer>
+                  <p id="footer-title"><img src="logo.png"></p>
+                  <p id="copyright">Copyright © All rights reserved.</p>
+            </footer>
+             
+            <script>
+                  var menuList = document.getElementById("menuList");
+                  menuList.style.maxHeight = "0px";
+                  function togglemenu(){
+                        if(menuList.style.maxHeight == "0px"){
+                              menuList.style.maxHeight = "800px";
+                        }
+                        else{
+                               menuList.style.maxHeight = "0px";
+                        }
+                  }
+
+                  menuList.style.maxHeight="30px";
+
+                  var audio = new Audio();
+                  audio.src = 'click.mp3';
+
+            </script>
+      </body>
+      </html>

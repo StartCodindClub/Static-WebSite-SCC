@@ -1,0 +1,121 @@
+
+* {
+    font-family: "Dancing Script", cursive;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/v627-aew-11-technologybackground.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+}
+.logo {
+    margin-left: 3%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+form {
+    width: 90%;
+    max-width: 600px;
+    margin-left: 15%;
+    flex: 2 1 0%;
+}
+.title {
+    margin-bottom: 20px;
+}
+.title p {
+    content: "";
+    width: 35%;
+    height: 3px;
+    display: block;
+    background: rgb(117, 0, 193);
+    margin: auto;
+}
+.logo_title::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: rgb(117, 0, 193);
+    margin: auto;
+    transition: all 0.5s ease 0s;
+}
+.logo_title:hover::after{
+    width: 100%;
+}
+._input {
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Poppins, sans-serif;
+    padding: 10px;
+    outline: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(117, 0, 193);
+    border-image: initial;
+    border-radius: 7px;
+    background: transparent;
+}
+label {
+    height: 100%;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    color: rgb(255, 255, 255);
+    cursor: text;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+button {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 0px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(117, 0, 193);
+    border-image: initial;
+    border-radius: 7px;
+    background: transparent;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -40px;
+    font-size: 16px;
+}
+/* responsive */
+@media only screen and (min-width: 0px) and (max-width: 1000px){
+
+.contact {
+    flex-direction: column;
+}
+form {
+    margin-left: 0%;
+    margin-top: 10%;
+}
+
+}

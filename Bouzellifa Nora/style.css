@@ -1,0 +1,262 @@
+/**introduction**/
+.debut{
+	font-family: cursive;
+	font-style: oblique;
+	padding-top:10px ;
+	padding-bottom:5px ;
+	border-style:ridge ;
+	border-width: 15px;
+	margin: 10px;
+}
+.debut span{
+	text-transform: uppercase;
+	display: block;
+}
+.text1{
+	color: black;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing:20px ;
+	margin-bottom: 10px;
+	padding-left: 80px;
+	animation: text 8s
+}
+.text2{
+	color:#C6A9A3;
+	padding-left: 10px;
+	font-size: 23px;
+	font-weight: 900 ;
+}
+@keyframes text{
+	0%{
+		color: #000;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 50px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing:20px;
+		margin-bottom: -40px;
+	}
+}
+/**NAV**/
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-family:'Dancing Script', cursive; 
+	font-size: 42px;
+}
+header{
+	height: 120px;
+	background: #C6A9A3;
+}
+header h1{
+	float: left;
+	margin-top: 32px;
+}
+header nav {
+	float: right;
+	margin-top: 50px;
+}
+.wrapper{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+ul{
+	list-style: none;
+}
+header nav ul li{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 22px;
+	float: left;
+	display: inline_blok;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/**hooome**/
+#main_image{
+	margin-top: 2px;
+	height: 620px;
+	background-image: url('lala.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+h2{
+	font-family: cursive;
+	font-size: 75px;
+	color:white;
+}
+#main_image h2{
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 100px 0 50px 0;
+	margin-bottom:50px ;
+}
+.button{
+	width: 130px;
+	height: 100 px;
+	background-color:#C6A9A3;
+	color:white ;
+	font-size:25px ;
+	margin:0 auto ;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 3px;
+	display: block;
+}
+.button:hover{
+	background:#91C788;
+}
+/**steps**/
+#steps ul{
+	margin: 20px 0;
+}
+#steps ul li{
+	width: 300px;
+	float:left;
+	padding-top:350px;
+	margin-right: 10px;
+	text-align: center;
+	padding: 180px 0px 180px  0px;
+}
+h4{
+	font-size: 26px;
+	color: black;
+	font-family:unset ;
+}
+.stee{
+	width: 120px;
+	height: 120 px;
+	background-color:#FFA900 ;
+	color:white ;
+	font-size:15px ;
+	margin:0 auto ;
+	text-align: center;
+	border-radius: 3px;
+	display: block;
+}
+.stee:hover{
+	background:#71EFA3 ;
+}
+
+#steps1{
+	background-image: url('FFFF.jpg');
+	margin-top:75px;
+	border-radius: 10px;
+	background-size: 100% 100%;
+}
+#steps2{
+	background-image: url('9PzXpdnnikh9VWUmDrj8H3E7.jpg');
+	margin-top:75px;
+	border-radius: 10px;
+	background-size: 100% 100%;
+}
+#steps3{
+	background-image: url('20210723_191711.jpg');
+	margin-top:75px;
+	border-radius: 10px;
+	background-size: 100% 100%;
+}
+/**storya**/
+.clean{
+	clear:both ;
+}
+h5{
+	margin-top: 600px;
+	font-size: 40px;
+	font-family: cursive;
+	margin-left:60px;
+	color: green;
+}
+#storyy{
+	padding-top: 10px;
+}
+/**possib**/ 
+#possibility{
+	padding:60px 0;
+}
+#possibility article{
+	width: 460px;
+	height:270px ;
+	float: left;
+	border-radius: 10px;
+	margin-right: 10px;
+	padding-top:350px;
+}
+#possibility article: first_child{
+	margin-right: 10px;
+}
+h4{
+	color: white;
+	font-family: cursive;
+}
+.overlay{
+	text-align: center;
+	text-transform: uppercase;
+	padding: 100px 0 50px 0;
+	margin-bottom:20px ;
+}
+.look{
+	width: 100px;
+	height: 80 px;
+	background-color:white ;
+	color:black ;
+	font-size:15px ;
+	margin:0 auto ;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	display: block;
+}
+.look:hover{
+	background: #71EFA3;
+}
+/**contact**/
+h3{
+	font-size: 30px;
+	color: #C6A9A3;
+}
+#contact{
+	padding: 60px 0;
+}
+#contact h3{
+	text-transform: uppercase;
+	width: 200px;
+	margin:0 auto 20px auto;
+	border-bottom: 2px solid green;
+	padding-bottom: 20px;
+}
+form{
+	margin:60px 0px 40px 0;
+}
+
+/**footer**/
+footer{
+	height: 260px;
+	background-color: #444;
+}
+footer h1{
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.copyy{
+	text-align: center;
+	font-weight: bold;
+	padding-top: 30px;
+	color: #777;
+}
+
+

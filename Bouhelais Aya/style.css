@@ -1,0 +1,454 @@
+/*General*/
+
+*{
+
+	margin:0;
+	padding: 0; 
+
+}
+
+
+p{
+	line-height: 20px;
+	color:#777;
+
+}
+
+body{
+	font-family: Arial, sans-serif;
+	font-size: 15 px;
+
+}
+
+
+                                    /*Header*/
+.orange {
+
+
+	color:#D0B49F;
+}
+
+
+h1 {
+
+	font-family: 'Domaine Diplay';
+	font-size: 45px;
+	color: #775c60;
+
+
+}
+
+
+header {
+
+	height: 120px;
+
+}
+
+
+header h1 {
+
+	float:left;
+	margin-top: 32px;
+
+
+}
+
+
+header nav {
+	float: right;
+	margin-top: 50px;
+
+}
+
+.wrapper{
+
+	width:940px; 
+	margin:0 auto;
+	padding: 0 10px;
+
+
+}
+
+
+ul{
+
+	list-style: none;
+
+}	
+
+header nav ul li a{
+	font-family: 'Pacifico;';
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 20px;
+	color: #775c60;
+
+}
+.button-33{
+	width: 100px;
+	height: 50px;
+	background-color: #775c60;
+	color: #fff;
+	font-size: 15px;
+	margin: 0 auto;
+	line-height:50px;
+	text-align: center;
+	border-radius: 80px;
+	display: block;
+
+}
+.button-33:hover{
+	background-color:#d09da6 ;
+}
+
+header nav ul li {
+
+	float:left;
+	display: inline-block;
+
+}
+
+
+a {
+
+	text-decoration: none;
+	color:#775c60;
+}
+
+                                 /* main image*/
+
+.morena{
+
+	color: #775c60;
+
+
+}
+
+#main-image{
+	height: 600px;
+	background: url('images/main.jpg')  no-repeat top center; 
+	position: center; 
+
+}
+
+h2{
+	font-family: 'Domaine Display';
+	font-size: 55px;
+	color:#d09da6;
+}
+
+#main-image h2{
+
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 150px 0 40px 0;
+	margin-bottom: 20px;
+
+
+}
+
+
+.button-1{
+	width: 120px;
+	height: 50px;
+	background-color: #775c60;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height:50px;
+	text-align: center;
+	border-radius: 50px;
+	display: block;
+
+}
+
+
+
+.button-1:hover{
+
+
+	background: #d09da6;
+
+
+}
+.wrapping{
+      margin-top: 20px;  
+      margin-bottom: 20;   
+     padding: 5px;
+	text-align: center;
+}
+
+
+
+
+                                        /*Steps*/
+
+#steps ul{
+
+	margin: 5px 0 ;
+}
+
+#steps ul li {
+
+	width: 300px;
+	float: left;
+	padding-top: 250px;
+	text-align: center;
+	margin-right: 10px;
+
+}
+
+h4 {
+	font-size:24px;
+	color:#C7A19B;
+
+}
+
+#steps h4 {
+
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+#steps p{
+	margin-bottom: 20px;
+    font-style:'Domaine Display' ;
+}
+.button-1{
+	width: 120px;
+	height: 50px;
+	background-color: #775c60;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height:50px;
+	text-align: center;
+	border-radius: 50px;
+	display: block;
+
+}
+
+
+
+.button-1:hover{
+
+
+	background: #d09da6;
+
+
+}
+
+#step-1 {
+	background: url('images/steps-icon-1.png') no-repeat top center;
+ 
+
+}
+
+#step-2 {
+	background: url('images/steps-icon-2.png') no-repeat top center;
+
+
+}
+
+#step-3 {
+	background: url('images/steps-icon-3.png') no-repeat top center;
+
+
+}
+
+.clear {
+
+	clear:both;
+}
+
+                                    /*possibilities*/
+
+#possibilities {
+
+
+	background-color: #8c6f61;
+	padding: 165px 0;
+}
+
+
+#possibilities article {
+	width: 460px;
+	height: 270px;
+	float: left;
+	border-radius: 80px;
+
+}
+
+#possibilities article:first-child {
+
+	margin-right: 20px;
+
+}
+
+.overlay {
+
+	background-color: rgba(255,255,255,0.95);
+	height: 100%;
+	width: 190px;
+	padding: 15px;
+	border-radius: 50px;
+	text-align:center;
+	box-sizing:border-box;
+    
+}
+
+
+
+article h4 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	text-align: center;
+
+
+}
+
+#possibilities p{
+
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+.button-2 {
+
+	width: 120px;
+	height: 50px;
+	background-color: #775c60;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height:50px;
+	text-align: center;
+	border-radius: 50px;
+	display: block;
+
+}
+
+.button-2:hover {
+	color: #fff;
+	background-color:#d09da6;
+
+}
+
+                                 /*Contact us*/
+
+
+h3{
+	font-size: 30px;
+	color:#775c60;
+}
+
+
+#contact {
+
+	padding: 100px 0;
+	text-align: center;
+}	
+
+#contact h3 {
+	width: 400px;
+	text-transform: uppercase;
+	margin: 0 auto 20px auto;
+	border-bottom: 1px solid #ff4d6c;
+	padding-bottom: 20px; 
+	font-family: 'Domaine Display';
+
+}
+#contact h1{
+	width: 400px;
+	text-transform: uppercase;
+	margin: 0 auto 20px auto;
+	border-bottom: 1px solid #ff4d6c;
+	padding-bottom: 20px; 
+	font-family: 'Domaine Display';
+}
+
+
+
+
+form{
+
+	margin: 60px 0 20px 0; 
+
+}
+
+label{
+	
+	color: #ff4d6c;
+
+}
+
+input[type="text"] {
+	padding: 10px;
+	font-size: 20px;
+	margin-right: 20px;
+    border-radius: 50px;
+    background-color:#C7A19B; 
+	border-bottom: 1px solid #ff4d6c;
+
+
+
+}
+.button-4:hover{
+
+	background-color:#d09da6 ; 
+}
+
+.button-3{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px;
+	background-color:#444;
+	border-radius: 100px;
+	
+
+}
+
+.button-3:hover{
+
+	color: #fff;
+	background-color:#d09da6 ; 
+	border-radius: 50px;
+
+}
+
+
+                                       /*Footer*/
+
+footer{
+
+	height: 260px;
+	background-color: #8c6f61;
+
+
+}
+
+footer h1{
+
+	color:#d09da6;;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.copyright{
+
+	text-align: center;
+	font-weight: bold;
+	padding-top:30px;
+	color:#444;
+}
+@media only screen and (min-width: 940px) and (max-width: 1070px){
+	#logoBox{
+		width: 35%;
+	}
+}
