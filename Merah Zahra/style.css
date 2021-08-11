@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+font-size: 10px;
+scroll-behavior: smooth;
+
+}
+body{
+    font-family:'Prata', serif;
+    background:#d9e2ec;
+    background-color:#DDD;
+}
+.photo{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.photo ul{
+    padding: 0;
+    width: 1550px;
+    list-style: none;
+    position: relative;
+    animation:sliding 10s ease-in-out infinite ;
+}
+
+.photo ul li{
+    float: left;
+    position: relative;
+}
+.photo img{
+    width: 300px;
+    height: 220px;
+}
+
+.photo ul:hover{
+    animation-play-state: paused;
+}
+
+@keyframes sliding{
+    5%,10%{left: 0}
+    15%,30%{left: -300px;}
+    35%,50%{left: -600px;}
+    55%,70%{left: -900px;}
+    75%,90%{left: -1200px;}
+}
+
+h1{
+    font-size:5rem ;
+    margin-bottom:1rem ;
+    color:floralwhite ;
+}
+
+h3{
+    font-size:2rem ;
+    line-height:1.8 ;
+    margin-bottom:2rem ;
+    color: rgb(20, 24, 20);
+}
+
+p{
+    font-size:1.6rem ;
+    color:#345375 ;
+    line-height:2 ;
+}
+
+/*nav section*/
+.nav-container{
+    background:#334e68 ;
+    color:rgb(41, 39, 35) ;
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto ;
+    max-width:1366px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:10vh ;
+    font-size:1.6rem ;
+}
+
+nav.logo{
+    font-family: 'Prata', serif;
+    font-weight:bold ;
+    color: rgb(194, 60, 71);
+    flex: 2;
+    margin-bottom: 0;
+}
+
+nav ul{
+    display:flex ;
+    list-style-type:none ;
+    justify-content:space-between ;
+    flex:1 ;
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(143, 104, 104);
+    text-decoration: none;
+}
+
+nav ul  il a:hover{
+    color: orange;
+}
+video{
+    width: 1500px;
+}
+
+/* hero section*/
+.hero {
+    height: 90vh;
+    position: relative;
+}
+
+.hero::after{
+    content:"" ;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image:linear-gradient(
+        90deg,
+        rgba(51,78,104,0.2) 0%,
+        rgba(20,63,92,0.8) 20%
+    ),
+    url("./photo\ 10.jpg");
+
+    animation: herobg 5s ease-in;
+    background-position: center;
+}
+
+
+
+.content{
+    width:90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display:flex ;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    height: 90vh;
+    }
+
+    h1 span,
+    h3 span {
+        color:#27ab83;
+    }
+
+    .btn{
+        font-family:inherit ;
+        font-size:1.6rem ;
+        font-weight: bold;
+        padding:0.75rem 3rem ;
+        border-radius: 0.5rem;
+        border:none;
+        outline: none;
+        background:#27ab83 ;
+    }
+
+    .btn a{
+        color:#243b53;
+        font-size: 1.6rem;
+        text-decoration:none ;
+    }
+
+    .btn:hover{
+        background: #2fca9c;
+    }
+
+    .btn:active{
+        transform:scale(0.98)
+    }
+
+    /*qualities section*/
+
+    .qualities{
+        width: 90%;
+        margin: 4rem auto;
+        max-width: 1366px;
+        height:100% ;
+        min-height: 50vh;
+        display:flex ;
+        flex-direction: column;
+        justify-content:center ;
+        text-align: center;
+    }
+    .quality h2{
+        font-size: 3rem;
+    }
+
+    .quality-container{
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 2rem;
+        padding-top: 5rem;
+    }
+
+    .quality{
+        background:#bcccdc ;
+        padding: 4rem 0;
+        width: 30%;
+    }
+    .quality p{
+        text-align: center;
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    .quality h3{
+        color: black;
+        font-size: 2.2rem;
+        margin-bottom:0 ;
+    }
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container i{
+    font-size:2.2rem ;
+    margin-right: 1rem;
+    color:#27ab83 ;
+}
+
+/*about section*/
+
+.about-container{
+    background: #334e68;
+}
+.about-us{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-content h2{
+    color: #d9e2ec;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about-content p{
+    margin-top: 1rem;
+    color: #d5d5d5;
+    width: 80%;
+}
+
+.about-us img{
+    width: 100%;
+    height: 100%;
+}
+
+/*contact us section*/
+
+.contact{
+    width: 90%;
+    max-width: 1366px;
+    margin: 3rem auto;
+    height: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+.contact h2{
+    font-size: 3rem;
+}
+
+
+
+label,
+input,
+textarea{
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+form.btn{
+    width: 100px;
+    align-self: center;
+}
+
+input,textarea{
+    width: 80%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea{
+    margin-bottom:1.5rem ;
+}
+
+/*footer section*/
+
+footer{
+    background: #243b53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+footer p{
+    color: #d9d9d9;
+}
+
+/*animation*/
+
+@keyframes herobg {
+    from {
+      scale: 1.2;
+    }
+    to {
+      scale: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 1400px) {
+    .hero .content {
+      align-items: center;
+      text-align: center;
+    }
+    .hero h4 {
+      width: 100%;
+    }
+  
+    .hero::after {
+      animation: none;
+    }
+  }
+  @media (max-width: 1042px) {
+    html {
+      font-size: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    .qualities-container {
+      flex-wrap: wrap;
+    }
+    .quality {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 752px) {
+    html {
+      font-size: 8px;
+    }
+  
+    .about-us img {
+      display: none;
+    }
+    .about-content {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    input,
+    textarea {
+      width: 40%;
+    }
+  }
+  © 2021 GitHub, Inc.
+  Terms
+  Privacy
+  Security
+  Status
+  Docs
+  Contact GitHub
+  Pricing
+  API
+  Training
+  Blog
+  About
+  
+
+
+
